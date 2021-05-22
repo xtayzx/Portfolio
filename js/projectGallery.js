@@ -32,17 +32,6 @@ let getLatestOpenedImg;
 let windowWidth = window.innerWidth;
 let windowHeight = window.innerHeight;
 
-//need this global variable to determine if it's a vertical photo for smaller screens and overall width size for standard viewport
-// var calcImgToEdge = 0;
-
-//global variables to determine button placement on smaller screens
-// var calcImgToEdgeH = 0;
-// var calcImgToEdgeW = 0;
-
-//global variables to determine current image size values for smaller screens and placement for closing the images
-// var selImgWidth = 0;
-// var selImgHeight = 0;
-
 if(galleryImages) {
     galleryImages.forEach(function(image, index){ /*checks each image*/
         image.onclick = function() { /*if it is clicked, create the gallery*/
@@ -70,109 +59,70 @@ if(galleryImages) {
             newImg.onload = function() {
                 // let imgWidth = this.width;
                 // calcImgToEdge = ((windowWidth - imgWidth) / 2) - 90; //calculate image to the border of the browser
-
-                let newNextBtn = document.createElement("a");
-                let btnNextText = document.createTextNode(">");
-                newNextBtn.appendChild(btnNextText);
-                container.appendChild(newNextBtn);
-                newNextBtn.setAttribute("class","img-btn-next");
-                newNextBtn.setAttribute("onclick","changeImg(1)");
-    
-                let newPrevBtn = document.createElement("a");
-                let btnPrevText = document.createTextNode("<");
-                newPrevBtn.appendChild(btnPrevText);
-                container.appendChild(newPrevBtn);
-                newPrevBtn.setAttribute("class","img-btn-prev");
-                newPrevBtn.setAttribute("onclick","changeImg(0)");
-
-                let newExitBtn = document.createElement("a");
-                let btnExitText = document.createTextNode("X");
-                newExitBtn.appendChild(btnExitText);
-                container.appendChild(newExitBtn);
-                newExitBtn.setAttribute("class","img-btn-exit");
-                newExitBtn.setAttribute("onclick","closeImg()"); //on the button click, activate close function
-                newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
-
-                newNextBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
-                newPrevBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
-                
-                //large screens and if buttons fit on the sides
-                // if(windowWidth > 991) {
-                //     let imgWidth = this.width;
-                //     calcImgToEdge = ((windowWidth - imgWidth) / 2) - 90; //calculate image to the border of the browser
-
-                //     newNextBtn.style.cssText = "right: " + calcImgToEdge + "px; opacity: 0%;";
-                //     newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px; opacity: 0%;";
-                // }
-
-                //smaller screens and buttons are placed below
-                // else if(windowWidth < 991) {
-                //     //setting the image size can only be determined in this function because it grabs the object specifically
-                //     let imgWidth = this.width;
-                //     let imgHeight = this.height;
-
-                //     //link back to the global variables
-                //     selImgWidth = imgWidth;
-                //     selImgHeight = imgHeight;
-
-                //     calcImgToEdge = ((windowWidth - imgWidth) / 2) - 90; //calculate image to the border of the browser
-                //     calcImgToEdgeW = ((windowWidth - imgWidth) / 2) + 30; 
-                //     calcImgToEdgeH = ((windowHeight - imgHeight) / 2) + imgHeight + 30;
-                    
-                //     //if it's a landscape image
-                //     if (imgWidth > imgHeight) {
-                //         newNextBtn.style.cssText = "right: " + calcImgToEdgeW + "px; top: " + calcImgToEdgeH + "px; opacity: 100%;";
-                //         newPrevBtn.style.cssText = "left: " + calcImgToEdgeW + "px; top: " + calcImgToEdgeH + "px; opacity: 100%;";
-                //     }
-
-                //     //if it's a vertical image
-                //     else if (imgHeight > imgWidth) {
-                //         newNextBtn.style.cssText = "right: " + calcImgToEdge + "px; top: 48vh; opacity: 100%;";
-                //         newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px; top: 48vh; opacity: 100%;";
-                //     }
-                // }
-
-                // I CANT DEBATE IF I WANT BUTTONS ON THE SIDES AHHHH
-                // if(windowWidth < 991) {
-                //     newNextBtn.style.cssText = "display: none;";
-                //     newPrevBtn.style.cssText = "display: none;";
-                // }
-                setTimeout(() => {
-                    var bExit = document.querySelector(".img-btn-exit");
-                    var bNext = document.querySelector(".img-btn-next");
-                    var bPrev = document.querySelector(".img-btn-prev");
+                if(windowWidth > 991) {
+                    let newNextBtn = document.createElement("a");
+                    let btnNextText = document.createTextNode(">");
+                    newNextBtn.appendChild(btnNextText);
+                    container.appendChild(newNextBtn);
+                    newNextBtn.setAttribute("class","img-btn-next");
+                    newNextBtn.setAttribute("onclick","changeImg(1)");
         
-                    bExit.style.cssText = "opacity: 100%;";
-                    bNext.style.opacity = "100%";
-                    bPrev.style.opacity = "100%";
-                    
-                    //because we are in the same function, we can use the same local variables that are created above
-                    newImgWindow.style.cssText = "opacity: 100%;";
-                    newImg.style.cssText = "opacity: 100%;";
-                    }, 100); //100 is the delay time
-            }
+                    let newPrevBtn = document.createElement("a");
+                    let btnPrevText = document.createTextNode("<");
+                    newPrevBtn.appendChild(btnPrevText);
+                    container.appendChild(newPrevBtn);
+                    newPrevBtn.setAttribute("class","img-btn-prev");
+                    newPrevBtn.setAttribute("onclick","changeImg(0)");
 
-            if(windowWidth < 991) {
-            newImgWindow.setAttribute("onclick","closeImg()");
-            // UNCOMMENT IF YOU WANT TO CLICK ANYWHERE ON BACKGROUND TO CLOSE WINDOW :D
-            // post note: so right now it is only activated for if the screen size is smaller and there are no buttons
-            }
+                    let newExitBtn = document.createElement("a");
+                    let btnExitText = document.createTextNode("X");
+                    newExitBtn.appendChild(btnExitText);
+                    container.appendChild(newExitBtn);
+                    newExitBtn.setAttribute("class","img-btn-exit");
+                    newExitBtn.setAttribute("onclick","closeImg()"); //on the button click, activate close function
+                    newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
 
-            //we put the pause in the code to allow the buttons to be created and then after to reassign the opacity value
-            //this way we are able to create the transition effect to load the gallery viewport components
-            // setTimeout(() => {
-            // var bExit = document.querySelector(".img-btn-exit");
-            // var bNext = document.querySelector(".img-btn-next");
-            // var bPrev = document.querySelector(".img-btn-prev");
-
-            // bExit.style.cssText = "opacity: 100%;";
-            // bNext.style.opacity = "100%";
-            // bPrev.style.opacity = "100%";
+                    newNextBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
+                    newPrevBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
+                
+                
+                    setTimeout(() => {
+                        var bExit = document.querySelector(".img-btn-exit");
+                        var bNext = document.querySelector(".img-btn-next");
+                        var bPrev = document.querySelector(".img-btn-prev");
             
-            // //because we are in the same function, we can use the same local variables that are created above
-            // newImgWindow.style.cssText = "opacity: 100%;";
-            // newImg.style.cssText = "opacity: 100%;";
-            // }, 100); //100 is the delay time
+                        bExit.style.cssText = "opacity: 100%;";
+                        bNext.style.opacity = "100%";
+                        bPrev.style.opacity = "100%";
+                        
+                        //because we are in the same function, we can use the same local variables that are created above
+                        newImgWindow.style.cssText = "opacity: 100%;";
+                        newImg.style.cssText = "opacity: 100%;";
+                        }, 100); //100 is the delay time
+                }
+        
+
+                else if(windowWidth < 991) {
+
+                    let newExitBtn = document.createElement("a");
+                    let btnExitText = document.createTextNode("X");
+                    newExitBtn.appendChild(btnExitText);
+                    container.appendChild(newExitBtn);
+                    newExitBtn.setAttribute("class","img-btn-exit");
+                    newExitBtn.setAttribute("onclick","closeImg()"); //on the button click, activate close function
+                    newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
+
+                    setTimeout(() => {
+                        var bExit = document.querySelector(".img-btn-exit");
+                        bExit.style.cssText = "opacity: 100%;";
+
+                        //because we are in the same function, we can use the same local variables that are created above
+                        newImgWindow.style.cssText = "opacity: 100%;";
+                        newImg.style.cssText = "opacity: 100%;";
+                        }, 100); //100 is the delay time
+                    newImgWindow.setAttribute("onclick","closeImg()");
+                }
+            }
         }
     });
 }
@@ -186,12 +136,21 @@ function closeImg() {
     var bNext = document.querySelector(".img-btn-next");
     var bPrev = document.querySelector(".img-btn-prev");
 
+    if(windowWidth > 991) {
+
     win.style.cssText = "opacity: 0%;";
     img.style.cssText = "opacity: 0%;";
     bExit.style.cssText = "opacity: 0%;";
 
     bNext.style.cssText = "opacity: 0%;";
     bPrev.style.cssText = "opacity: 0%;";
+    }
+
+    else if(windowWidth < 991) {
+        win.style.cssText = "opacity: 0%;";
+        img.style.cssText = "opacity: 0%;";
+        bExit.style.cssText = "opacity: 0%;";
+    }
 
     //have to recall the values for placement on the screen otherwise they will reset as 0
     // if(windowWidth > 991){
