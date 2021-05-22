@@ -1,5 +1,5 @@
 /* MEDIUM DEVICES STYLESHEET (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
     
     /* #header-space {
         width: 30%;
