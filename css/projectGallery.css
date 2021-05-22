@@ -129,6 +129,7 @@ img # is the specific styling for each image */
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    line-height: 30px;
     /* display: none; */
     /* idk if i want to turn it off but yeah just uncomment */
 }
