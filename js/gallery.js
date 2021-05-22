@@ -148,9 +148,9 @@ if(galleryImages) {
             //we put the pause in the code to allow the buttons to be created and then after to reassign the opacity value
             //this way we are able to create the transition effect to load the gallery viewport components
             setTimeout(() => {
-            let bNext = document.querySelector(".img-btn-next");
-            let bPrev = document.querySelector(".img-btn-prev");
-            let bExit = document.querySelector(".img-btn-exit");
+            var bNext = document.getElementsByClassName("img-btn-next");
+            var bPrev = document.getElementsByClassName("img-btn-prev");
+            var bExit = document.getElementsByClassName("img-btn-exit");
 
             bNext.style.opacity = "100%";
             bPrev.style.opacity = "100%";
