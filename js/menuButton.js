@@ -26,10 +26,10 @@ function openMenu() {
         //x.style.maxHeight === "0px" && 
         menu === 0) {
         menu = 1;
-        x.style.maxHeight = "420px";
+        x.style.maxHeight = "410px";
         pr.style.cssText = "opacity: 100%;"
         ph.style.cssText = "opacity: 100%;"
-        h.style.cssText = "opacity: 100%; padding-bottom: 10px;"
+        h.style.cssText = "opacity: 100%;"
     }
 
     //x.style.height === 0
