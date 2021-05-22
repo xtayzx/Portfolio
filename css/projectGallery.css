@@ -108,14 +108,14 @@ img # is the specific styling for each image */
     text-align: center;
     justify-content: center;
     vertical-align: middle;
-    padding: 4vh 8vw;
+    padding: 15vh 10vw;
     /* display: none; */
     /* idk if i want to turn it off but yeah just uncomment */
 }
 
 @media only screen and (max-width: 767px) {
     .gallery-img a {
-        padding: 15vh 20vw;
+        padding: 4vh 4vw;
         /* display: none; */
         /* idk if i want to turn it off but yeah just uncomment */
     }
