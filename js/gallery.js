@@ -87,15 +87,14 @@ if(galleryImages) {
 
                 let newExitBtn = document.createElement("a");
                 let btnExitText = document.createTextNode("X");
-
                 newExitBtn.appendChild(btnExitText);
                 container.appendChild(newExitBtn);
                 newExitBtn.setAttribute("class","img-btn-exit");
                 newExitBtn.setAttribute("onclick","closeImg()"); //on the button click, activate close function
-                newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
 
                 newNextBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
                 newPrevBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
+                newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
                 
                 //large screens and if buttons fit on the sides
                 // if(windowWidth > 991) {
