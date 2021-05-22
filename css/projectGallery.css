@@ -105,16 +105,25 @@ img # is the specific styling for each image */
 
 .gallery-img a {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
+    text-align: center;
+    height: 390px;
+    width: 590px;
+    justify-content: center;
+    vertical-align: middle;
+    /* padding-top: 115px; */
+    /* display: none; */
+    /* idk if i want to turn it off but yeah just uncomment */
+}
+
+.gallery-img a h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
     font-weight: 400;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    height: 290px;
-    width: 465px;
-    justify-content: center;
-    padding-top: 115px;
+    padding-top: 165px;
     /* display: none; */
     /* idk if i want to turn it off but yeah just uncomment */
 }
