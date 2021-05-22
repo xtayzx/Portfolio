@@ -111,6 +111,10 @@ img # is the specific styling for each image */
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    height: 290px;
+    width: 465px;
+    justify-content: center;
+    padding-top: 115px;
     /* display: none; */
     /* idk if i want to turn it off but yeah just uncomment */
 }
