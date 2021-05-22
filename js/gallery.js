@@ -150,7 +150,7 @@ if(galleryImages) {
             setTimeout(() => {
             var bNext = document.querySelector(".img-btn-next");
             var bPrev = document.querySelector(".img-btn-prev");
-            var bExit = document.gquerySelector(".img-btn-exit");
+            var bExit = document.querySelector(".img-btn-exit");
 
             bNext.style.opacity = "100%";
             bPrev.style.opacity = "100%";
