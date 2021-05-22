@@ -158,14 +158,16 @@ function loadButtons() {
         var bNext = document.querySelector(".img-btn-next");
         var bPrev = document.querySelector(".img-btn-prev");
         var bExit = document.querySelector(".img-btn-exit");
+        var win = document.querySelector(".img-window");
+        var img = document.querySelector("#current-img");
 
         bNext.style.opacity = "100%";
         bPrev.style.opacity = "100%";
         bExit.style.cssText = "opacity: 100%;";
         
         //because we are in the same function, we can use the same local variables that are created above
-        newImgWindow.style.cssText = "opacity: 100%;";
-        newImg.style.cssText = "opacity: 100%;";
+        win.style.cssText = "opacity: 100%;";
+        img.style.cssText = "opacity: 100%;";
         }, 100); //100 is the delay time
 }
 
