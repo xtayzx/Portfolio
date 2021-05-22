@@ -161,8 +161,8 @@ function loadButtons() {
         var win = document.querySelector(".img-window");
         var img = document.querySelector("#current-img");
 
-        bNext.style.opacity = "100%";
-        bPrev.style.opacity = "100%";
+        bNext.style.cssText = "opacity: 100%;";
+        bPrev.style.cssText = "opacity: 100%;";
         bExit.style.cssText = "opacity: 100%;";
         
         //because we are in the same function, we can use the same local variables that are created above
