@@ -63,7 +63,6 @@ if(galleryImages) {
             newImg.onload = function() {
                 // let imgWidth = this.width;
                 // calcImgToEdge = ((windowWidth - imgWidth) / 2) - 90; //calculate image to the border of the browser
-                if(windowWidth > 991) {
                     let newNextBtn = document.createElement("a");
                     let btnNextText = document.createTextNode(">");
                     newNextBtn.appendChild(btnNextText);
@@ -103,29 +102,7 @@ if(galleryImages) {
                         newImgWindow.style.cssText = "opacity: 100%;";
                         newImg.style.cssText = "opacity: 100%;";
                         }, 100); //100 is the delay time
-                }
-        
-
-                else if(windowWidth < 991) {
-
-                    let newExitBtn = document.createElement("a");
-                    let btnExitText = document.createTextNode("X");
-                    newExitBtn.appendChild(btnExitText);
-                    container.appendChild(newExitBtn);
-                    newExitBtn.setAttribute("class","img-btn-exit");
-                    newExitBtn.setAttribute("onclick","closeImg()"); //on the button click, activate close function
-                    newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
-
-                    setTimeout(() => {
-                        var bExit = document.querySelector(".img-btn-exit");
-                        bExit.style.cssText = "opacity: 100%;";
-
-                        //because we are in the same function, we can use the same local variables that are created above
-                        newImgWindow.style.cssText = "opacity: 100%;";
-                        newImg.style.cssText = "opacity: 100%;";
-                        }, 100); //100 is the delay time
-                    newImgWindow.setAttribute("onclick","closeImg()");
-                }
+                
             }
         }
     });
@@ -140,21 +117,12 @@ function closeImg() {
     var bNext = document.querySelector(".img-btn-next");
     var bPrev = document.querySelector(".img-btn-prev");
 
-    if(windowWidth > 991) {
-
         win.style.cssText = "opacity: 0%;";
         img.style.cssText = "opacity: 0%;";
         bExit.style.cssText = "opacity: 0%;";
 
         bNext.style.cssText = "opacity: 0%;";
         bPrev.style.cssText = "opacity: 0%;";
-    }
-
-    else if(windowWidth < 991) {
-        win.style.cssText = "opacity: 0%;";
-        img.style.cssText = "opacity: 0%;";
-        bExit.style.cssText = "opacity: 0%;";
-    }
 
     //have to recall the values for placement on the screen otherwise they will reset as 0
     // if(windowWidth > 991){
