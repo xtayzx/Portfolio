@@ -29,7 +29,7 @@ function openMenu() {
         x.style.maxHeight = "420px";
         pr.style.cssText = "opacity: 100%;"
         ph.style.cssText = "opacity: 100%;"
-        h.style.cssText = "opacity: 100%;"
+        h.style.cssText = "opacity: 100%; padding-bottom: 10px;"
     }
 
     //x.style.height === 0
