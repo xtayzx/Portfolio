@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- HELLO and welcome to the code of my site!
+	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
+	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
+	please consider these factors and i ask that you please do not copy my files without contacting me first.
+	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
+	- taylen
+	-->
+
+    <meta charset="utf-8" />
+    <title>Taylen Lee-Chin | Alessi</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- MEDIA QUERIES -->
+	<link rel="stylesheet" href="css/lgDevices.css">
+	<link rel="stylesheet" href="css/mdDevices.css">
+	<link rel="stylesheet" href="css/smDevices.css">
+	<link rel="stylesheet" href="css/xsmDevices.css">
+
+	<!-- MENU FOR SMALL SCREENS -->
+	<script src="js/menuButton.js"></script>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+
+	<!-- GALLERY -->
+	<!-- js line is at the bottom -->
+	<link rel="stylesheet" href="css/projectGallery.css">
+
+</head>
+<body>
+	<div class = "page-container">
+	  	<header class = "flex-container">
+			<div id = "header-space">
+				<h1 id = "logo">
+					<!-- change to actual website link later -->
+					<a href="https://xtayzx.github.io/taylen" id="logo-link">TLC</a>
+				</h1>
+				<button id="button-container" onclick="openMenu()">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+			</div>
+			<na id="menu">
+				<ul>
+					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
+					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
+					<li class="menu-item" id="about"><a href="about">About</a></li>
+				</ul>
+			</na>
+		</header>
+	
+		<section class = "main">
+            <h2 class ="project-title">Alessi</h2>
+            <div class = "flex-container info-section">
+                <div class = "flex-container details">
+                    <div class="full-width">
+                        <h4>Date</h4><p>Fall 2018</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Role</h4><p>Graphic Design<br>Layout Design</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Tools</h4><p>InDesign<br>Photoshop</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Overview</h3>
+                    <p>The creation of this Alessi poster is a student project for a graphic design class.
+						The task for the project was to create an 11x17” public advertising poster 
+						for an upcoming local design exhibit in Vancouver. I chose the option to advertise 
+						for an exhibition of Alessi products located at the Vancouver Art Gallery. </p>
+						
+						<p>In researching the brand and its products, I created a cohesive design that incorporates the appropriate 
+						typefaces, graphics and imagery, corresponding to the company's image and creating an effective 
+						advertisement. The final poster incorporates an image of a lemon juicer made by Alessi, one 
+						of Alessi’s most known products and dominant monochrome colour palette of red tones to correspond 
+						with companies colours. I wanted the text and colours to create a strong contrast to draw the 
+						attention to the public, while keeping a clean layout that showcases the product and informs viewers 
+						of key information about the event.</p>
+						
+						<p style="font-style: italic;">Additional Notes: This project is not affiliated with Alessi or the Vancouver Art Gallery.
+						Images and graphics used to create the following posters belong to Alessi, the Vancouver Art Gallery and their respective owners.</p>
+                </div>
+            </div>
+			<div class = "flex-container project-gallery" style="padding-left: 25%; padding-right: 25%;">
+                <img src = "img/alessi1.jpg" alt="Alessi Final Poster" oncontextmenu="return false;">
+            </div>
+			<h6>Above: The final poster.</h6>
+
+			<div class = "flex-container project-gallery" style="flex-direction: row;">
+                <img src = "img/alessi2.jpg" alt="Alessi Sketches 1" oncontextmenu="return false;">
+				<img src = "img/alessi3.jpg" alt="Alessi Sketches 2" oncontextmenu="return false;">
+            </div>
+			<h6>Above: Early sketches and brainstorming ideas.</h6>
+
+			<div class = "flex-container project-gallery" style="flex-direction: row;">
+                <img src = "img/alessi4.jpg" alt="Alessi Rough Poster 1" oncontextmenu="return false;">
+				<img src = "img/alessi5.jpg" alt="Alessi Rough Poster 2" oncontextmenu="return false;">
+				<img src = "img/alessi6.jpg" alt="Alessi Rough Poster 3" oncontextmenu="return false;">
+            </div>
+			<h6>Above: Further prototypes created of different layouts and ideas.</h6>
+
+            <div class="flex-container subfooter">
+                <div style="float: left">
+                    <a href = "hnac"><< Haney Neptunes Aquatic Club</a>
+                </div>
+                <div style="float: right">
+                    <a href = "the-usual">The Usual >></a>
+                </div>
+            </div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="flex-container" id="footer-container">
+			<div class="footer-section" id ="footer-text">
+				<p>coded together with tender loving care.</p>
+				<p>© 2021 taylen lee-chin.</p>
+				<p>all rights reserved.</p>
+			</div>
+			<div class="footer-section" style="padding-top: 12px;">
+				<a href="https://taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
+			</div>
+			<div class="footer-section" id="footer-links">
+				<p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
+				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
+				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

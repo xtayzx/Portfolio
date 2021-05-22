@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- HELLO and welcome to the code of my site!
+	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
+	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
+	please consider these factors and i ask that you please do not copy my files without contacting me first.
+	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
+	- taylen
+	-->
+
+    <meta charset="utf-8" />
+    <title>Taylen Lee-Chin | Synaesthetic</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- MEDIA QUERIES -->
+	<link rel="stylesheet" href="css/lgDevices.css">
+	<link rel="stylesheet" href="css/mdDevices.css">
+	<link rel="stylesheet" href="css/smDevices.css">
+	<link rel="stylesheet" href="css/xsmDevices.css">
+
+	<!-- MENU FOR SMALL SCREENS -->
+	<script src="js/menuButton.js"></script>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+
+	<!-- GALLERY -->
+	<!-- js line is at the bottom -->
+	<link rel="stylesheet" href="css/projectGallery.css">
+
+</head>
+<body>
+	<div class = "page-container">
+	  	<header class = "flex-container">
+			<div id = "header-space">
+				<h1 id = "logo">
+					<!-- change to actual website link later -->
+					<a href="https://xtayzx.github.io/taylen" id="logo-link">TLC</a>
+				</h1>
+				<button id="button-container" onclick="openMenu()">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+			</div>
+			<na id="menu">
+				<ul>
+					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
+					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
+					<li class="menu-item" id="about"><a href="about">About</a></li>
+				</ul>
+			</na>
+		</header>
+	
+		<section class = "main">
+            <h2 class ="project-title">Synaesthetic</h2>
+            <div class = "flex-container info-section">
+                <div class = "flex-container details">
+                    <div class="full-width">
+                        <h4>Date</h4><p>Spring 2020</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Role</h4><p>Programmer<br>Circuit Design</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Tools</h4><p>Arduino<br>Processing<br>Circuit Building</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Team</h4><p>Samantha Bachalo<br>Paola Ortiz<br>Clare Huang</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Overview</h3>
+                    <p>Synaesthetic is an educational toy and a computer technological program created for a student final project for a technological systems class.
+						The user experience a simulated version of synesthesia, a neurological condition where 
+						the stimulation of one sense automatically triggers the stimulation of other senses, 
+						such as hearing colours and seeing sounds. Synesthesia educates users about how one may 
+						experience synesthesia by letting user experiment with colour, shape, size and sound to create 
+						a drawing using alternative senses to control how their art appears.</p>
+
+						<p>The task of the project 
+						was to develop a physically interactive system that takes the inputs of various sensors from user 
+						interaction, reads it into a computer system and creates various physical outputs such as light, 
+						motion and sound. Our project uses LEDs, a force sensor, a slider sensor, a microphone and computer 
+						inputs from a mouse, a keyboard, speakers and a camera. Altogether, these are incorporated into a functioning circuit.</p>
+            
+                </div>
+            </div>
+
+			<div style="padding-top: 35px; justify-content: center; text-align: center; max-height: 800px; min-height: 300px; height: 100%;">
+				<iframe width="100%" height="500px" src="https://www.youtube.com/embed/9wfiGyr47pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div style="padding: 30px 8% 0 8%;">
+				<h4 style="text-align: center;">How Synaesthetic Works</h4><br>
+				<p>1) The user begins the program by activating the force sensor. The background music begins and continues on a loop till the program terminates.</p><br>
+				<p>2) The user is welcomed to the start screen. Once the user releases the force sensor, they can click START with the mouse to proceed. The blue LED on box illuminates the first step of the program. The LEDs continue to light up one by one as the user proceeds.</p><br>
+				<p>3) The user is instructed to move the slider sensor to select which one out of four shapes they would like to draw. Once selected, the user presses Enter/Return to move to the next step.</p><br>
+				<p>4) The user is instructed to speak into microphone to grow size of their selected shape. The louder the sound, the bigger the shape. The user presses Enter/Return while speaking to select shape size and to continue.</p><br>
+				<p>5) The computer camera is activated and the user is instructed to place an object with colour of their choice in front of camera, or allow camera to detect a colour situated in their environment. The user clicks the mouse on 
+					the area of their desired colour of choosing. A dot on screen appears and displays the current colour selected, where the user presses Enter/Return to save colour selection and to go to next step.</p><br>
+				<p>6) The user is instructed to place their shape anywhere on the drawing canvas using computer mouse and pressing Enter/Return to place the shape.</p><br>
+				<p>7) The user proceeds through steps 3 - 6 until they are satisfied with their drawing. To display the final drawing, the user clicks the DONE button. To restart the program, the user can click START.</p>
+			</div>
+			<div class = "flex-container project-gallery">
+                <img src = "img/syna1.jpg" alt="Synaesthetic Prototype" oncontextmenu="return false;">
+				<img src = "img/syna2.jpg" alt="Synaesthetic Components Diagram" oncontextmenu="return false;">
+				<img src = "img/syna3.jpg" alt="Synaesthetic Circuit Diagram" oncontextmenu="return false;">
+            </div>
+			<h6>Above: Photos of the physical prototype toy built and diagrams that show how the physical components are connected together and how the various inputs and outputs interact
+				 with each other.</h6>
+
+			<div class = "flex-container project-gallery" style="flex-direction: row;">
+                <img src = "img/syna4.jpg" alt="Synaesthetic Program 1" oncontextmenu="return false;">
+				<img src = "img/syna5.jpg" alt="Synaesthetic Program 2" oncontextmenu="return false;">
+            </div>
+			<div class = "flex-container project-gallery" style="flex-direction: row;">
+				<img src = "img/syna6.jpg" alt="Synaesthetic Program 3" oncontextmenu="return false;">
+				<img src = "img/syna7.jpg" alt="Synaesthetic Program 4" oncontextmenu="return false;">
+            </div>
+			<h6>Above: Screenshots of the various stages and steps in the program.</h6>
+			
+            <div class="flex-container subfooter">
+                <div style="float: left">
+                    <a href = "five-star-food"><< Five Star Food</a>
+                </div>
+                <div style="float: right">
+                    <a href = "she-connects">She Connects >></a>
+                </div>
+            </div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="flex-container" id="footer-container">
+			<div class="footer-section" id ="footer-text">
+				<p>coded together with tender loving care.</p>
+				<p>© 2021 taylen lee-chin.</p>
+				<p>all rights reserved.</p>
+			</div>
+			<div class="footer-section" style="padding-top: 12px;">
+				<a href="https://taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
+			</div>
+			<div class="footer-section" id="footer-links">
+				<p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
+				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
+				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

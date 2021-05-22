@@ -1,0 +1,80 @@
+/* MEDIUM DEVICES STYLESHEET (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    #header-space {
+        width: 30%;
+    }
+
+    #footer-container {
+        flex-direction: column;
+    }
+
+    #footer-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #footer-links{
+        display: none;
+        /* padding-top: 20px;
+        text-align: center;	 */
+    }
+
+    #index-text {
+        width: 60%;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about-text {
+        /* padding-left: 0px; */
+        padding: 30px 10vw 0px 10vw;
+    }
+    
+    /* #socials {
+        flex-direction: row;
+    } */
+
+    /* #me {
+        width: 50%;
+        padding: 0px 10vw;
+    } */
+
+    .info-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .description {
+        padding-left: 0px;
+        padding-top: 45px;
+        width: 100%;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .about-text {
+        padding-left: 0px;
+    }
+
+    .about-text h2{
+        padding-top: 50px;
+    }
+
+    .socials {
+        flex-direction: row;
+    }
+
+    /* .project-gallery {
+        flex-direction: column;
+    } */
+} 

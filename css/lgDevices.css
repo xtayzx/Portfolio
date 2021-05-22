@@ -1,0 +1,27 @@
+/* LARGE DEVICES STYLESHEET (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    #header-space {
+        width: 50%;
+    }
+
+    #footer-container {
+        flex-direction: column;
+    }
+
+    #footer-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #footer-links{
+        display: none;
+        /* padding-top: 20px;
+        text-align: center;	 */
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+} 

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- HELLO and welcome to the code of my site!
+	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
+	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
+	please consider these factors and i ask that you please do not copy my files without contacting me first.
+	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
+	- taylen
+	-->
+
+    <meta charset="utf-8" />
+    <title>Taylen Lee-Chin | About</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- MEDIA QUERIES -->
+	<link rel="stylesheet" href="css/lgDevices.css">
+	<link rel="stylesheet" href="css/mdDevices.css">
+	<link rel="stylesheet" href="css/smDevices.css">
+	<link rel="stylesheet" href="css/xsmDevices.css">
+
+	<!-- MENU FOR SMALL SCREENS -->
+	<script src="js/menuButton.js"></script>
+	<script src="js/imageChange.js"></script>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class = "page-container">
+	  	<header class = "flex-container">
+			<div id = "header-space">
+				<h1 id = "logo">
+					<a href="index" id="logo-link">TLC</a>
+				</h1>
+				<button id="button-container" onclick="openMenu()">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+			</div>
+			<na id="menu">
+				<ul>
+					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
+					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
+					<li class="menu-item" id="about"><a href="about" class = "selected">About</a></li>
+				</ul>
+			</na>
+		</header>
+	
+		<section class = "main flex-container" id="hello">
+			<div class= "full-width">
+				<div id="mePhotos">
+					<img class="full-width" id="me" src="img/me1.jpg" alt="Taylen 1" oncontextmenu="return false;">
+					<img class="full-width" id="me2" src="img/me2.jpg" alt="Taylen 2" onmouseover="meMouseOn()" onmouseout="meMouseOff()" oncontextmenu="return false;">
+				</div>
+				<div class="flex-container" id="funFacts">
+					<p id="funFactsText" onmouseover="meMouseOn()" onmouseout="meMouseOff()">thank you so much for stopping by &#9825; <br>
+						feel free to chat with me about anything design, art, films/shows, music (especially about concerts and all genres)... anything that's awesome!! :)
+					</p>
+				</div>
+			</div>
+			<div class="about-text">
+			<h2>Hello, my name is Taylen.</h2>
+			<p>I am a multidisciplinary visual designer who loves to explore and work on all things creative. Currently, I am
+				pursuing my Bachelors in Interactive Arts and Technology with a minor in Print and Digital Publishing at Simon Fraser University.
+				My studies are focused around Design as well as Interactive Systems. </p>
+
+			<p>
+				My design practices focus on showcasing the human connection with one’s self, with others and the world.
+				
+				I want to capture these emotions and moments and create works that share meaningful and 
+				impactful stories.
+				
+				My expertise in the Adobe Creative Suite with programs such as Photoshop, Lightroom, InDesign and Illustator
+				allow me to become the visual storyteller to showcase these authetic stories.
+
+				<em>I believe every project has a meaningful purpose, a story to tell and an audience to listen. I want to help you tell your story.</em></p>
+				<p>Let's collaborate!</p> 
+
+				<div class="flex-container socials">
+					<div class="full-width projects">
+						<p><a href="resume" target="_self">Resume</a><br>
+							Email: <a href="mailto:taylenlc@outlook.com">taylenlc@outlook.com</a><br>
+							Location: Vancouver, Canada</p>
+					</div>
+					<div class="full-width projects">
+						<p>Instagram: <a href="https://www.instagram.com/tayz.lc" target="_blank">@tayz.lc</a><br>
+							<a href="https://www.linkedin.com/in/tayzlc/" target="_blank">LinkedIn</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="flex-container" id="footer-container">
+			<div class="footer-section" id ="footer-text">
+				<p>coded together with tender loving care.</p>
+				<p>© 2021 taylen lee-chin.</p>
+				<p>all rights reserved.</p>
+			</div>
+			<div class="footer-section" style="padding-top: 12px;">
+				<a href="https://taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
+			</div>
+			<div class="footer-section" id="footer-links">
+				<p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
+				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
+				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- HELLO and welcome to the code of my site!
+	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
+	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
+	please consider these factors and i ask that you please do not copy my files without contacting me first.
+	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
+	- taylen
+	-->
+
+    <meta charset="utf-8" />
+    <title>Taylen Lee-Chin</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- MEDIA QUERIES -->
+	<link rel="stylesheet" href="css/lgDevices.css">
+	<link rel="stylesheet" href="css/mdDevices.css">
+	<link rel="stylesheet" href="css/smDevices.css">
+	<link rel="stylesheet" href="css/xsmDevices.css">
+
+	<!-- MENU FOR SMALL SCREENS -->
+	<script src="js/menuButton.js"></script>
+	<script src="js/imageChange.js"></script>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KWXGJT237D"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-KWXGJT237D');
+	</script>
+</head>
+<body>
+	<div class = "page-container">
+	  	<header class = "flex-container">
+			<div id = "header-space">
+				<h1 id = "logo">
+					<!-- change to actual website link later -->
+					<a href="https://taylen.ca" id="logo-link">TLC</a>
+				</h1>
+				<button id="button-container" onclick="openMenu()">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+			</div>
+			<na id="menu">
+				<ul>
+					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
+					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
+					<li class="menu-item" id="about"><a href="about">About</a></li>
+				</ul>
+			</na>
+		</header>
+	
+		<section id="welcome" class="main">
+			<div id="index-text">
+			<h1>Taylen Lee-Chin</h1>
+			<p><i class="text-link" onmouseover="imageOn1()" onmouseout="imageOff()">Multidisciplinary visual designer</i> and creator.</p>
+			<p>Based out of the west coast in <a href="https://www.google.com/maps/place/Metro+Vancouver,+BC/@49.2884146,-123.2955314,10z/data=!3m1!4b1!4m5!3m4!1s0x5462ce9005f9dfa5:0xce9c6c979ef4fca6!8m2!3d49.2501243!4d-123.0824217" target="_blank" class="text-link" onmouseover="imageOn2()" onmouseout="imageOff()">Vancouver, Canada</a>.</p>
+			<p>Currently studying design and interactive systems <a href="https://www.sfu.ca" target="_blank" class="text-link" onmouseover="imageOn3()" onmouseout="imageOff()">@SFU</a>.</p>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="flex-container" id="footer-container">
+			<div class="footer-section" id ="footer-text">
+				<p>coded together with tender loving care.</p>
+				<p>© 2021 taylen lee-chin.</p>
+				<p>all rights reserved.</p>
+			</div>
+			<div class="footer-section" style="padding-top: 12px;">
+				<a href="https://taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
+			</div>
+			<div class="footer-section" id="footer-links">
+				<p><a href="resume.html" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
+				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
+				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- HELLO and welcome to the code of my site!
+	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
+	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
+	please consider these factors and i ask that you please do not copy my files without contacting me first.
+	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
+	- taylen
+	-->
+
+    <meta charset="utf-8" />
+    <title>Taylen Lee-Chin | Five Star Food</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- MEDIA QUERIES -->
+	<link rel="stylesheet" href="css/lgDevices.css">
+	<link rel="stylesheet" href="css/mdDevices.css">
+	<link rel="stylesheet" href="css/smDevices.css">
+	<link rel="stylesheet" href="css/xsmDevices.css">
+
+	<!-- MENU FOR SMALL SCREENS -->
+	<script src="js/menuButton.js"></script>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+
+	<!-- GALLERY -->
+	<!-- js line is at the bottom -->
+	<link rel="stylesheet" href="css/projectGallery.css">
+
+</head>
+<body>
+	<div class = "page-container">
+	  	<header class = "flex-container">
+			<div id = "header-space">
+				<h1 id = "logo">
+					<!-- change to actual website link later -->
+					<a href="https://xtayzx.github.io/taylen" id="logo-link">TLC</a>
+				</h1>
+				<button id="button-container" onclick="openMenu()">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+			</div>
+			<na id="menu">
+				<ul>
+					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
+					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
+					<li class="menu-item" id="about"><a href="about">About</a></li>
+				</ul>
+			</na>
+		</header>
+	
+		<section class = "main">
+            <h2 class ="project-title">Five Star Food</h2>
+            <div class = "flex-container info-section">
+                <div class = "flex-container details">
+                    <div class="full-width">
+                        <h4>Date</h4><p>Summer 2020</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Role</h4><p>Graphic Design<br>Layout Design<br>Typography</p>
+                    </div>
+                    <div class="full-width">
+                        <h4>Tools</h4><p>InDesign<br>Illustrator<br>Photoshop</p>
+                    </div>
+                    <!-- <div class="full-width">
+                        <h4>Website</h4><p><a href="https://www.bctfa.ca" target="_blank">bctfa.ca</a></p>
+                    </div> -->
+                </div>
+                <div class="description">
+                    <h3>Overview</h3>
+                    <p>This Five Star Food cookbook redesign is a student project created for a graphic design class.
+					
+						The assignment consisted of taking the content from the cookbook of 
+						our choosing and designing the page layouts, colour palettes and selecting 
+						corresponding photos and typography that would complete the overall look of the design. 
+						In approaching this project, I wanted to target a young adult audience to present a refreshed 
+						modern design cookbook that contains and showcases the best classic recipes.</p>
+
+						<p>Challenges for this project were that every page spread had a set of restrictions. Spread 1, only one font family was allowed, had to be
+							 the same font height, only 2 font weights could be selected and to be designed on a grid. Spread 2, only 2 font families and 2 font sizes were allowed, had to be designed on a grid. 
+							 Spread 3, to explore extreme sizes and contrasts and to either design on a grid or grid-free structure.
+						</p> 
+						
+						<p style="font-style: italic;">Additional Notes: The cookbook redesigned is "Five Star Food" by The Vancouver Sun (Eve Johnson) - 1993.
+							The images used for this project are stock images and are not my own.</p>
+                </div>
+            </div>
+			<div class = "flex-container project-gallery">
+                <img src = "img/fsf1.jpg" alt="Five Star Food Front Cover" oncontextmenu="return false;">
+				<img src = "img/fsf2.jpg" alt="Five Star Food Back Cover" oncontextmenu="return false;">
+            </div>
+			<h6>Above: The redesigned front and back cover of the cookbook.</h6>
+
+			<div class = "flex-container project-gallery" style="flex-direction: row;">
+                <img src = "img/fsf3.jpg" alt="Five Star Food Brainstorm 1" oncontextmenu="return false;">
+				<img src = "img/fsf4.jpg" alt="Five Star Food Brainstorm 2" oncontextmenu="return false;">
+            </div>
+			<h6>Above: Images from the original cookbook, early sketches and brainstormed ideas.</h6>
+
+			<div class = "flex-container project-gallery">
+                <img src = "img/fsf5.jpg" alt="Five Star Food Spread 1" oncontextmenu="return false;">
+            </div>
+			<div class = "flex-container project-gallery">
+                <img src = "img/fsf6.jpg" alt="Five Star Food Spread 2" oncontextmenu="return false;">
+            </div>
+			<div class = "flex-container project-gallery">
+                <img src = "img/fsf7.jpg" alt="Five Star Food Spread 3" oncontextmenu="return false;">
+            </div>
+			<h6>Above: The final spread solutions for the project.</h6>
+
+            <div class="flex-container subfooter">
+                <div style="float: left">
+                    <a href = "chair"><< This Chair is Not a Chair</a>
+                </div>
+                <div style="float: right">
+                    <a href = "synaesthetic">Synaesthetic >></a>
+                </div>
+            </div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="flex-container" id="footer-container">
+			<div class="footer-section" id ="footer-text">
+				<p>coded together with tender loving care.</p>
+				<p>© 2021 taylen lee-chin.</p>
+				<p>all rights reserved.</p>
+			</div>
+			<div class="footer-section" style="padding-top: 12px;">
+				<a href="https://taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
+			</div>
+			<div class="footer-section" id="footer-links">
+				<p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
+				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
+				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
