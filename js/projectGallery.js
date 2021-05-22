@@ -32,10 +32,6 @@ let getLatestOpenedImg;
 let windowWidth = window.innerWidth;
 let windowHeight = window.innerHeight;
 
-var bNext;
-var bPrev;
-var bExit;
-
 if(galleryImages) {
     galleryImages.forEach(function(image, index){ /*checks each image*/
         image.onclick = function() { /*if it is clicked, create the gallery*/
@@ -90,9 +86,9 @@ if(galleryImages) {
                 
                 
                     setTimeout(() => {
-                        bExit = document.querySelector(".img-btn-exit");
-                        bNext = document.querySelector(".img-btn-next");
-                        bPrev = document.querySelector(".img-btn-prev");
+                       var bExit = document.querySelector(".img-btn-exit");
+                        var bNext = document.querySelector(".img-btn-next");
+                        var bPrev = document.querySelector(".img-btn-prev");
             
                         bExit.style.cssText = "opacity: 100%;";
                         bNext.style.opacity = "100%";
