@@ -26,7 +26,7 @@ function openMenu() {
         //x.style.maxHeight === "0px" && 
         menu === 0) {
         menu = 1;
-        x.style.maxHeight = "408px";
+        x.style.maxHeight = "420px";
         pr.style.cssText = "opacity: 100%;"
         ph.style.cssText = "opacity: 100%;"
         h.style.cssText = "opacity: 100%;"
