@@ -1,10 +1,3 @@
-/* Gallery Container */
-/* KEYNOTES */
-/* remember, if you are doing vertical columns, you have to redefine the height because it will just go to the default */
-
-/* gallery-img is the default styling
-img # is the specific styling for each image */
-
 /* IMPORTED FONTS */
 /* font-family: 'Josefin Sans', sans-serif; */
 /* font-family: 'Syncopate', sans-serif; */
@@ -15,8 +8,7 @@ img # is the specific styling for each image */
     grid-template-rows: auto;
     grid-gap: 15px;
     grid-template-areas: 
-    /* "gallery-p gallery-p gallery-p gallery-p"
-    "gallery-h2 gallery-h2 gallery-h2 gallery-h2" */
+
     "img1 img2 img3"
     "img4 img5 img6"
     "img7 img8 img9"
@@ -31,7 +23,7 @@ img # is the specific styling for each image */
     "img34 img35 img36"
     "img37 img38 img39"
     "img40 img41 img42";
-    /*how its layed out in the website*/
+
 }
 
 #index-gallery .gallery-img{
@@ -42,15 +34,6 @@ img # is the specific styling for each image */
     background-position: center;
     cursor: pointer;
 }
-
-/*images*/
-/* #index-gallery p{
-    grid-area: gallery-p;
-}
-
-#index-gallery h2{
-    grid-area: gallery-h2;
-} */
 
 #index-gallery .img1{
     grid-area: img1;
@@ -63,8 +46,6 @@ img # is the specific styling for each image */
 #index-gallery .img3{
     grid-area: img3;
     background-image: url("../img/thumbs/img3.jpg");
-    /* height: 615px; */
-     /*because we are taking account into the gap as well*/
 }
 #index-gallery .img4{
     grid-area: img4;
@@ -223,7 +204,6 @@ img # is the specific styling for each image */
     background-image: url("../img/thumbs/img42.jpg");
 }
 
-/*Gallery image titles*/
 .gallery-img div {
     width: 100%;
     height: 100%;
@@ -242,8 +222,6 @@ img # is the specific styling for each image */
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    /* display: none; */
-    /* idk if i want to turn it off but yeah just uncomment */
 }
 
 .gallery-img div:hover {
@@ -252,7 +230,6 @@ img # is the specific styling for each image */
     cursor: pointer;
 }
 
-/*Pop-up window when clicked */
 .img-window {
     width: 100vw;
     height: 100vh;
@@ -260,7 +237,6 @@ img # is the specific styling for each image */
     position: fixed;
     top: 0;
     left: 0;
-    /* cursor: ; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +245,6 @@ img # is the specific styling for each image */
     transition: opacity ease-in-out 600ms;
 }
 
-/*Styling image inside of the container */
 .img-window img {
     max-width: 80vw;
     max-height: 80vh;
@@ -295,11 +270,7 @@ img # is the specific styling for each image */
     transition: opacity ease-in-out 600ms;
 }
 
-/*Next Image*/
 .img-btn-next {
-    /*if you choose to have a background for the buttons later*/
-    /* border-radius: 4px;
-    background-color: black; */
     display: block;
     padding: 15px 15px;
     position: fixed;
@@ -311,26 +282,17 @@ img # is the specific styling for each image */
     font-size: 36px;
     font-weight: bold;
     opacity: 0%;
-    /* right: 80px; */
-
-    /* top: 48vh; */
     right: 20px;
     bottom: 85px;
-
     transition: opacity ease-in-out 600ms;
 }
 
 .img-btn-next:hover {
     transition: color ease-in-out 200ms;
-    /* opacity: 0.8; */
 }
 
-/*Prev Image*/
-.img-btn-prev {
-    /*if you choose to have a background for the buttons later*/
-    /* border-radius: 4px;
-    background-color: #111111; */
 
+.img-btn-prev {
     display: block;
     padding: 15px 15px;
     position: fixed;
@@ -342,30 +304,20 @@ img # is the specific styling for each image */
     font-size: 36px;
     font-weight: bold;
     opacity: 0%;
-
-    /* top: 48vh; */
     right: 20px;
     bottom: 15px;
-
     transition: opacity ease-in-out 600ms;
 }
 
 .img-btn-prev:hover {
     transition: color ease-in-out 200ms;
-    /* opacity: 0.8; */
 }
 
-
-/* MEDIA QUERIES */
-
-/* lgDevices */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     #index-gallery {
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 15px; */
         grid-template-areas: 
-        /* "gallery-p"
-        "gallery-h2" */
+
         "img1 img2 img3"
         "img4 img5 img6"
         "img7 img8 img9"
@@ -380,35 +332,19 @@ img # is the specific styling for each image */
         "img34 img35 img36"
         "img37 img38 img39"
         "img40 img41 img42";
-        /*how its layed out in the website*/
     }
-    
-    /* has to be restated everytime the layout changes */
+
     #index-gallery .gallery-img{
         height: 300px;
     }
-
-/*Next Image*/
-/* .img-btn-next {
-    top: 0px;
-    left: 80vw;
-} */
-
-/*Prev Image*/
-/* .img-btn-prev {
-    top: 0px;
-    left: 15vw;
-} */
 }
 
 /* mdDevices */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #index-gallery {
         grid-template-columns: 1fr 1fr;
-        /* grid-gap: 15px; */
         grid-template-areas: 
-        /* "gallery-p"
-        "gallery-h2" */
+
         "img1 img2"
         "img3 img4"
         "img5 img6"
@@ -430,32 +366,16 @@ img # is the specific styling for each image */
         "img37 img38"
         "img39 img40"
         "img41 img42";
-        /*how its layed out in the website*/
     }
     
-    /* has to be restated everytime the layout changes */
     #index-gallery .gallery-img{
         height: 300px;
     }
-
-/*Next Image*/
-/* .img-btn-next {
-    top: 0px;
-    left: 80vw;
-} */
-
-/*Prev Image*/
-/* .img-btn-prev {
-    top: 0px;
-    left: 15vw;
-} */
 }
 
-/* xsm and smDevices */
 @media only screen and (max-width: 767px) {
     #index-gallery {
         grid-template-columns: 1fr;
-        /* grid-gap: 10px; */
         grid-template-areas: 
         "img1"
         "img2"
@@ -499,23 +419,9 @@ img # is the specific styling for each image */
         "img40"
         "img41"
         "img42";
-        /*how its layed out in the website*/
     }
     
-    /* has to be restated everytime the layout changes */
     #index-gallery .gallery-img{
         height: 300px;
     }
-
-    /*Next Image*/
-    /* .img-btn-next {
-        top: 0px;
-        left: 80vw;
-    } */
-    
-    /*Prev Image*/
-    /* .img-btn-prev {
-        top: 0px;
-        left: 15vw;
-    } */
 }

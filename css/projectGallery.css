@@ -15,15 +15,12 @@ img # is the specific styling for each image */
     grid-template-rows: auto;
     grid-gap: 15px;
     grid-template-areas: 
-    /* "gallery-p gallery-p gallery-p gallery-p"
-    "gallery-h2 gallery-h2 gallery-h2 gallery-h2" */
+
     "img1 img2"
     "img3 img4"
     "img5 img6"
     "img7 img8"
     "img9 img10";
-    /* "img9 img10 img10"; */
-    /*how its layed out in the website*/
 }
 
 #index-gallery .gallery-img{
@@ -34,15 +31,6 @@ img # is the specific styling for each image */
     background-position: center;
     cursor: pointer;
 }
-
-/*images*/
-/* #index-gallery p{
-    grid-area: gallery-p;
-}
-
-#index-gallery h2{
-    grid-area: gallery-h2;
-} */
 
 #index-gallery .img1{
     grid-area: img1;
@@ -55,7 +43,6 @@ img # is the specific styling for each image */
 #index-gallery .img3{
     grid-area: img3;
     background-image: url("../img/projects/cs.jpg");
-     /*because we are taking account into the gap as well*/
 }
 #index-gallery .img4{
     grid-area: img4;
@@ -91,7 +78,6 @@ img # is the specific styling for each image */
     background-image: url("../img/projects/alessi.jpg");
 }
 
-/*Gallery image titles*/
 .gallery-img div {
     width: 100%;
     height: 100%;
@@ -109,15 +95,11 @@ img # is the specific styling for each image */
     justify-content: center;
     vertical-align: middle;
     padding: 15vh 10vw;
-    /* display: none; */
-    /* idk if i want to turn it off but yeah just uncomment */
 }
 
 @media only screen and (max-width: 991px) {
     .gallery-img a {
         padding: 4vh 4vw;
-        /* display: none; */
-        /* idk if i want to turn it off but yeah just uncomment */
     }
 }
 
@@ -130,8 +112,6 @@ img # is the specific styling for each image */
     text-transform: uppercase;
     text-align: center;
     line-height: 30px;
-    /* display: none; */
-    /* idk if i want to turn it off but yeah just uncomment */
 }
 
 .gallery-img p {
@@ -143,8 +123,6 @@ img # is the specific styling for each image */
     text-transform: none;
     padding-top: 20px;
     text-align: center;
-    /* display: none; */
-    /* idk if i want to turn it off but yeah just uncomment */
 }
 
 .gallery-img div:hover {
@@ -153,82 +131,45 @@ img # is the specific styling for each image */
     cursor: pointer;
 }
 
-
-/* MEDIA QUERIES */
-
-/* lgDevices */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1001px) and (max-width: 1199px) {
     #index-gallery {
         grid-template-columns: 1fr 1fr;
-        /* grid-gap: 15px; */
         grid-template-areas: 
-        /* "gallery-p"
-        "gallery-h2" */
+
         "img1 img2"
         "img3 img4"
         "img5 img6"
         "img7 img8"
         "img9 img10";
-        /*how its layed out in the website*/
+
     }
     
-    /* has to be restated everytime the layout changes */
     #index-gallery .gallery-img{
         height: 300px;
     }
-
-/*Next Image*/
-/* .img-btn-next {
-    top: 0px;
-    left: 80vw;
-} */
-
-/*Prev Image*/
-/* .img-btn-prev {
-    top: 0px;
-    left: 15vw;
-} */
 }
 
-/* mdDevices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
     #index-gallery {
         grid-template-columns: 1fr 1fr;
-        /* grid-gap: 15px; */
         grid-template-areas: 
-        /* "gallery-p"
-        "gallery-h2" */
+
         "img1 img2"
         "img3 img4"
         "img5 img6"
         "img7 img8"
         "img9 img10";
-        /*how its layed out in the website*/
     }
     
-    /* has to be restated everytime the layout changes */
+
     #index-gallery .gallery-img{
         height: 300px;
     }
-
-/*Next Image*/
-/* .img-btn-next {
-    top: 0px;
-    left: 80vw;
-} */
-
-/*Prev Image*/
-/* .img-btn-prev {
-    top: 0px;
-    left: 15vw;
-} */
 }
 
-/* xsm and smDevices */
 @media only screen and (max-width: 767px) {
     #index-gallery {
         grid-template-columns: 1fr;
-        /* grid-gap: 10px; */
         grid-template-areas: 
         "img1"
         "img2"
@@ -240,23 +181,9 @@ img # is the specific styling for each image */
         "img8"
         "img9"
         "img10";
-        /*how its layed out in the website*/
     }
     
-    /* has to be restated everytime the layout changes */
     #index-gallery .gallery-img{
         height: 300px;
     }
-
-    /*Next Image*/
-    /* .img-btn-next {
-        top: 0px;
-        left: 80vw;
-    } */
-    
-    /*Prev Image*/
-    /* .img-btn-prev {
-        top: 0px;
-        left: 15vw;
-    } */
 }

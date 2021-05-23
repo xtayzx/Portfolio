@@ -1,5 +1,4 @@
 ﻿/* MAIN STYLESHEET*/
-/*designed for extra large screens (large laptops and desktops, 1200px and up) */
 
 /* IMPORTED FONTS */
 /* font-family: 'Josefin Sans', sans-serif; */
@@ -14,7 +13,6 @@
 	text-decoration: none;
 }
 
-/* custom color variables */
 :root {
 	--background: #F5F5F5;
 	--hoverColor: #9e8eb3;
@@ -59,37 +57,14 @@ a:hover {
 
 body {
 	background: var(--background);
-	/* i decided not to put the padding here because then the header and footer would be cut on the sides for the background */
-	/* side margins */
 }
-
-/* img {
-	width: 25%;
-	height: 100%;
-} */
 
 /*CLASSES*/
 
-/* for the footer and overall page length */
 .page-container {
 	min-height: 90vh;
-	/* padding: 0% 8%; */
-	/* animation: transition 0.75s; */
 }
 
-/* ill try this later - transition between pages */
-/* @keyframes transition {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-
-} */
-
-/* for the header */
 .flex-container {
     width: 100%;
 	min-height: 100px;
@@ -98,24 +73,17 @@ body {
 	flex-direction: row;
 }
 
-/* main page area constraints */
 .main {
 	padding: 20px 8%;
-	/*idk to define width here too for margin?*/
 	background-color: var(--background);
 }
 
-/* defining which page is selected */
 .selected {
 	font-weight: 400;
 	text-decoration: underline;
 	text-underline-offset: 8px;
 }
 
-
-/* .wrapper-gallery {
-	margin: 0 20vw;
-} */
 
 /*LOGO*/
 
@@ -148,13 +116,6 @@ body {
 
 #button-container {
 	display: none;
-	/* position: relative;
-	display: block;
-	float: right;
-	top: 75px;
-	width: 35px;
-	height: 35px;
-	background-color: green; */
 }
 
 #welcome {
@@ -257,12 +218,6 @@ body {
 
 .line {
 	display: none;
-	/* display: flex;
-	align-content: center;
-	width: 100%;
-	height: 3px;
-	background-color: black;
-	margin: 5px 0px; */
 }
 
 .info-section {
@@ -357,7 +312,6 @@ body {
 	text-align: right;	
 }
 
-/* need menu tag because it tags the js for the button toggle */
 #menu {
 	height: 200px;
 }
@@ -381,42 +335,31 @@ body {
 
 /*NAVIGATION*/
 na {
-	/* background-color: none; */
 	padding-right: 8%;
 	width: 100%;
-	/* display: block; */
-	/* height: 200px; */
-	/* background-color: lightblue; */
-	/* transition: all ease-in-out 200ms; */
 }
 
 ul {
  	float: right;
-} /*moving the entire navigation*/
+}
 
 ul li {
 	list-style: none;
-/*	display: inline-block;*/ /*to click link or to click block*/
 	float: left;
 	line-height: 200px;
 	transition: opacity ease-in-out 0.6s;
-} /*moving the indivual links in list*/
+} 
 
 ul li a {
 	transition: all ease-in-out 200ms;
 	font-size: 14px;
 	font-family: 'Josefin Sans', sans-serif;
-/*	color: maroon;*/
 	padding-left: 36px;
 	font-weight: 300;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-/*	display: block;*/ /*to click link or to click block*/
-} /*styling the text in the link*/
+}
 
-/*font and heading types and changes*/
-
-/* i think this is for the logo */
 h1 {
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
@@ -427,7 +370,6 @@ h1 {
 	opacity: 100%;
 }
 
-/* main headings on the website */
 h2 {
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
@@ -436,7 +378,6 @@ h2 {
 	line-height: 1.4;
 }
 
-/* subheadings */
 h3 {
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
@@ -446,7 +387,6 @@ h3 {
 	line-height: 20px;
 }
 
-/* smaller headings */
 h4 {
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
@@ -455,7 +395,6 @@ h4 {
 	font-size: 22px;
 }
 
-/* descriptors */
 h6 {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
