@@ -1,5 +1,5 @@
 /* LARGE DEVICES STYLESHEET (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1001px) and (max-width: 1399px) {
+@media only screen and (min-width: 1001px) and (max-width: 1499px) {
 
     #header-space {
         width: 50%;
@@ -25,7 +25,7 @@
 } 
 
 /* EXTRA LARGE SCREENS */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
     
     #welcome {
         padding: 28vh 8%;
