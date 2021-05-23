@@ -70,13 +70,13 @@ if(galleryImages) {
             newImg.onload = function() {
                 // let imgWidth = this.width;
                 // calcImgToEdge = ((windowWidth - imgWidth) / 2) - 90; //calculate image to the border of the browser
-
                 let newNextBtn = document.createElement("a");
                 let btnNextText = document.createTextNode(">");
                 newNextBtn.appendChild(btnNextText);
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class","img-btn-next");
                 newNextBtn.setAttribute("onclick","changeImg(1)");
+                // alert("next button created");
     
                 let newPrevBtn = document.createElement("a");
                 let btnPrevText = document.createTextNode("<");
@@ -84,6 +84,7 @@ if(galleryImages) {
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute("class","img-btn-prev");
                 newPrevBtn.setAttribute("onclick","changeImg(0)");
+                // alert("prev button created");
 
                 let newExitBtn = document.createElement("a");
                 let btnExitText = document.createTextNode("X");
@@ -91,10 +92,12 @@ if(galleryImages) {
                 container.appendChild(newExitBtn);
                 newExitBtn.setAttribute("class","img-btn-exit");
                 newExitBtn.setAttribute("onclick","closeImg()"); //on the button click, activate close function
+                // alert("exit button created");
 
-                newNextBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
-                newPrevBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
+                newNextBtn.style.opacity = "0%"; //intially the button is transparent
+                newPrevBtn.style.opacity = "0%"; //intially the button is transparent
                 newExitBtn.style.cssText = "opacity: 0%;"; //intially the button is transparent
+                // alert("opacity assigned");
                 
                 //large screens and if buttons fit on the sides
                 // if(windowWidth > 991) {
@@ -137,6 +140,7 @@ if(galleryImages) {
                 //     newNextBtn.style.cssText = "display: none;";
                 //     newPrevBtn.style.cssText = "display: none;";
                 // }
+                loadButtons();
             }
 
             if(windowWidth < 991) {
@@ -145,12 +149,15 @@ if(galleryImages) {
             // post note: so right now it is only activated for if the screen size is smaller and there are no buttons
             }
 
+            setTimeout(() => {
+            //because we are in the same function, we can use the same local variables that are created above
+            newImgWindow.style.cssText = "opacity: 100%;";
+            newImg.style.cssText = "opacity: 100%;";
+            }, 100);
             //we put the pause in the code to allow the buttons to be created and then after to reassign the opacity value
             //this way we are able to create the transition effect to load the gallery viewport components
         }
-        
     });
-    document.querySelector(".img-btn-next").addEventListener("load", loadButtons());
 }
 
 function loadButtons() {
@@ -158,17 +165,12 @@ function loadButtons() {
         var bNext = document.querySelector(".img-btn-next");
         var bPrev = document.querySelector(".img-btn-prev");
         var bExit = document.querySelector(".img-btn-exit");
-        var win = document.querySelector(".img-window");
-        var img = document.querySelector("#current-img");
 
         bNext.style.cssText = "opacity: 100%;";
         bPrev.style.cssText = "opacity: 100%;";
         bExit.style.cssText = "opacity: 100%;";
-        
-        //because we are in the same function, we can use the same local variables that are created above
-        win.style.cssText = "opacity: 100%;";
-        img.style.cssText = "opacity: 100%;";
         }, 100); //100 is the delay time
+        // alert("buttons loading");
 }
 
 //closing the gallery
