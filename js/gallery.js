@@ -147,9 +147,8 @@ if(galleryImages) {
 
             //we put the pause in the code to allow the buttons to be created and then after to reassign the opacity value
             //this way we are able to create the transition effect to load the gallery viewport components
-           
+            galleryImages.addEventListener("click", loadButtons());
         }
-        image.addEventListener("click", loadButtons());
     });
 }
 
