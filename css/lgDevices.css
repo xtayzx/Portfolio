@@ -24,11 +24,69 @@
 
 } 
 
+@media only screen and (min-width: 1001px) and (min-height: 950px) {
+#welcome {
+    padding: 32vh 8%;
+}
+}
+
 /* EXTRA LARGE SCREENS */
 @media only screen and (min-width: 1500px) {
-    
     #welcome {
-        padding: 28vh 8%;
+        padding: 32vh 8%;
+    }
+
+    .footer-section p a {
+        font-size: 20px;
+    }
+
+    .footer-section p {
+        font-size: 20px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+
+    ul li {
+        line-height: 205px;
+    } 
+
+    #logo {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .description p {
+        padding-top: 16px;
+    }
+
+    .details p {
+        font-size: 20px;
+        padding-top: 12px;
+        font-style: italic;
+    }
+
+    .subfooter div a {
+        font-family: 'Lato', sans-serif;
+        font-variant-caps: all-small-caps;
+        font-size: 24px;
+        font-weight: 400;
     }
 
 }
