@@ -1,104 +1,99 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found | Taylen Lee-Chin</title>
 
-	<!-- HELLO and welcome to the code of my site!
-	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
-	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
-	please consider these factors and i ask that you please do not copy my files without contacting me first.
-	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
-	- taylen
-	-->
+    <meta name="description" content="Taylen Lee-Chin is a Visual Designer from Vancouver, Canada. This is her portfolio. Graphic designer, Photographer, Visual Artist and Art Director." />
 
-    <meta charset="utf-8" />
-    <title>Taylen Lee-Chin | Error 404</title>
-	<link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-	<!-- MEDIA QUERIES -->
-	<link rel="stylesheet" href="css/lgDevices.css">
-	<link rel="stylesheet" href="css/mdDevices.css">
-	<link rel="stylesheet" href="css/smDevices.css">
-	<link rel="stylesheet" href="css/xsmDevices.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-	<!-- MENU FOR SMALL SCREENS -->
-	<script src="js/menuButton.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap"
+        rel="stylesheet">
 
-	<!-- FAVICON -->
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVFM6649MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	<!-- FONTS -->
-	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-	<!-- GALLERY -->
-	<link rel="stylesheet" href="css/projectGallery.css">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KWXGJT237D"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-KWXGJT237D');
-	</script>
-
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-
-	<meta name="description" content="Taylen Lee-Chin is a multidisciplinary visual designer from Vancouver, Canada. This is her portfolio. Graphic designer, Photographer, Visual Artist, Front-End Developer, Art Director." />
-
+        gtag('config', 'G-DVFM6649MR');
+    </script>
 </head>
-<body>
-	<div class = "page-container">
-	  	<header class = "flex-container">
-			<div id = "header-space">
-				<h1 id = "logo">
-					<a href="https://www.taylen.ca" id="logo-link">TLC</a>
-				</h1>
-				<button id="button-container" onclick="openMenu()">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</button>
-			</div>
-			<na id="menu">
-				<ul>
-					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
-					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
-					<li class="menu-item" id="about"><a href="about">About</a></li>
-				</ul>
-			</na>
-		</header>
-	
-		<section class = "main">
-			<div class = "flex-container">
-				<div style="padding-right: 30px;">
-					<h2 class="project-title">OOPS... something went wrong o.o</h2><br>
-                    <p>Either this page does not exist or there is another hidden bug in my code again, sigh...</p><br>
-					<p>Please try again, otherwise if this is a reoccurring issue, do not heistate to contact me so I can fix it!! Thank you :))</p>
-				</div>
-				<iframe src="https://giphy.com/embed/LmNwrBhejkK9EFP504" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen style="padding-top: 30px;"></iframe><a href="https://giphy.com/gifs/memecandy-LmNwrBhejkK9EFP504"></a>
-			</div>
-		</section>
-	</div>
 
-	<footer>
-		<div class="flex-container" id="footer-container">
-			<div class="footer-section" id ="footer-text">
-				<p>coded and created with tender loving care.</p>
-				<p>© 2021 taylen lee-chin.</p>
-				<p>all rights reserved.</p>
-			</div>
-			<div class="footer-section" style="padding-top: 16.5px;">
-				<a href="https://www.taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
-			</div>
-			<div class="footer-section" id="footer-links">
-				<p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
-				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
-				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
-			</div>
-		</div>
-	</footer>
+<body>
+    <script src="js/loadCSS.js" id="about"></script>
+    <header class="content-container-header">
+        <a href="https://taylen.ca" class="tlc-logo">
+            <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" aria-labelledby="logo-label" aria-describedby="logo-description">
+                <title id="logo-label">Taylen Lee-Chin's Logo</title>
+                <desc id="logo-description">A moon shaped icon with the initals TLC incorportated with the design.</desc>
+                
+                <defs><style>.cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:4.5px;}</style></defs><path class="cls-1" d="M79.89,80.05a31.89,31.89,0,0,1,0-63.78h.78a45.65,45.65,0,1,0,0,63.76Z"/><line class="cls-1" x1="7.83" y1="26.47" x2="56.51" y2="26.47"/><line class="cls-1" x1="7.88" y1="69.94" x2="56.6" y2="69.94"/><line class="cls-1" x1="18.06" y1="26.47" x2="18.06" y2="83.1"/><line class="cls-1" x1="34.7" y1="4.4" x2="34.7" y2="69.94">
+            </svg>
+        </a>
+        <button class="button" id="menu-toggle">
+            <svg id="menu-icon" data-name="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" aria-labelledby="button-label"
+            aria-describedby="button-description">
+            
+            <title id="button-label">Main Menu Button</title>
+            <desc id="button-description">A button that toggles the main menu that looks like a plus. When clicked, the image rotates and forms an X shape.</desc>
+            <defs><style>.p{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:10px;}</style></defs><line class="p" x1="48.16" y1="5.45" x2="48.16" y2="90.87"/><line class="p" x1="5.45" y1="48.16" x2="90.87" y2="48.16">
+            
+            </svg>
+        </button>
+    </header>
+
+    <nav class="main-menu hidden" id="menu" aria-labelledby="menu-toggle">
+        <div class="menu-item">
+            <a href="projects">Projects</a>
+        </div>
+        <div class="menu-item">
+            <a href="photography">Photo + Film</a>
+        </div>
+        <div class="menu-item">
+            <a href="about">About</a>
+        </div>
+        <div class="menu-item">
+            <a href="https://drive.google.com/file/d/1VumParS_xITvhdpTfukCfWgzK3EvJxXY/view?usp=sharing" target="_blank">Resume</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="content-container banner" id="about-banner">
+            <h1 class="no-display">404 Page not found</h1>
+            <p id="about-title">Whoops</p>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="about-description">
+            <h2 class="name">Why hello there, something happened</h2>
+            <p>Either this page does not exist or there is an error with the website.</p>
+            <p>Please contact Taylen if this keeps on continuing to occur. Thank you!!</p>
+        </div>
+    </section>
+
+    <footer class="content-container">
+        <div>
+            <p>Coded & created with tender loving care.</p>
+            <p>© 2022 Taylen Lee-Chin.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>

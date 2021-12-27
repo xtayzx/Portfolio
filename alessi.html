@@ -1,154 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessi | Taylen Lee-Chin</title>
 
-	<!-- HELLO and welcome to the code of my site!
-	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
-	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
-	please consider these factors and i ask that you please do not copy my files without contacting me first.
-	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
-	- taylen
-	-->
+    <meta name="description" content="Taylen Lee-Chin is a Visual Designer from Vancouver, Canada. This is her portfolio. Graphic designer, Photographer, Visual Artist and Art Director." />
 
-    <meta charset="utf-8" />
-    <title>Taylen Lee-Chin | Alessi</title>
-	<link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-	<!-- MEDIA QUERIES -->
-	<link rel="stylesheet" href="css/lgDevices.css">
-	<link rel="stylesheet" href="css/mdDevices.css">
-	<link rel="stylesheet" href="css/smDevices.css">
-	<link rel="stylesheet" href="css/xsmDevices.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-	<!-- MENU FOR SMALL SCREENS -->
-	<script src="js/menuButton.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap"
+        rel="stylesheet">
 
-	<!-- FAVICON -->
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVFM6649MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	<!-- FONTS -->
-	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap" rel="stylesheet">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-	<!-- GALLERY -->
-	<link rel="stylesheet" href="css/projectGallery.css">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KWXGJT237D"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-KWXGJT237D');
-	</script>
-
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-
-	<meta name="description" content="Taylen Lee-Chin is a multidisciplinary visual designer from Vancouver, Canada. This is her portfolio. Graphic designer, Photographer, Visual Artist, Front-End Developer, Art Director." />
-
+        gtag('config', 'G-DVFM6649MR');
+    </script>
 </head>
+
 <body>
-	<div class = "page-container">
-	  	<header class = "flex-container">
-			<div id = "header-space">
-				<h1 id = "logo">
-					<a href="https://www.taylen.ca" id="logo-link">TLC</a>
-				</h1>
-				<button id="button-container" onclick="openMenu()">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</button>
-			</div>
-			<na id="menu">
-				<ul>
-					<li class="menu-item" id="projects"><a href="projects">Projects</a></li>
-					<li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
-					<li class="menu-item" id="about"><a href="about">About</a></li>
-				</ul>
-			</na>
-		</header>
-	
-		<section class = "main">
-            <h2 class ="project-title">Alessi</h2>
-            <div class = "flex-container info-section">
-                <div class = "flex-container details">
-                    <div class="full-width">
-                        <h4>Date</h4><p>Fall 2018</p>
-                    </div>
-                    <div class="full-width">
-                        <h4>Role</h4><p>Graphic Design<br>Layout Design</p>
-                    </div>
-                    <div class="full-width">
-                        <h4>Tools</h4><p>InDesign<br>Photoshop</p>
-                    </div>
-                </div>
-                <div class="description">
-                    <h3>Overview</h3>
-                    <p>The creation of this Alessi poster is a student project for a graphic design class.
-						The task for the project was to create an 11x17” public advertising poster 
-						for an upcoming local design exhibit in Vancouver. I chose the option to advertise 
-						for an exhibition of Alessi products located at the Vancouver Art Gallery. </p>
-						
-						<p>In researching the brand and its products, I created a cohesive design that incorporates appropriate 
-						typefaces, graphics and imagery corresponding to the company's image. 
-						The final advertisement poster incorporates an image of a lemon juicer made by Alessi, one 
-						of Alessi’s most known products, and dominant monochrome colour palette of red tones to correspond 
-						with companies colours. I wanted the text and colours to create a strong contrast to draw the 
-						attention to the public, while keeping a clean layout that showcases the product and informs viewers 
-						of key information about the event.</p>
-						
-						<p style="font-style: italic;">Additional Notes: This project is not affiliated with Alessi or the Vancouver Art Gallery.
-						Images and graphics used to create the following posters belong to Alessi, the Vancouver Art Gallery and their respective owners.</p>
-                </div>
-            </div>
-			<div class = "flex-container project-gallery" style="padding-left: 25%; padding-right: 25%;">
-                <img src = "img/alessi1.jpg" alt="Alessi Final Poster" oncontextmenu="return false;">
-            </div>
-			<h6>Above: The final poster.</h6>
+    <script src="js/loadCSS.js" class="single-project"></script>
+    <header class="content-container-header">
+        <a href="https://taylen.ca" class="tlc-logo">
+            <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" aria-labelledby="logo-label" aria-describedby="logo-description">
+                <title id="logo-label">Taylen Lee-Chin's Logo</title>
+                <desc id="logo-description">A moon shaped icon with the initals TLC incorportated with the design.</desc>
+                
+                <defs><style>.cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:4.5px;}</style></defs><path class="cls-1" d="M79.89,80.05a31.89,31.89,0,0,1,0-63.78h.78a45.65,45.65,0,1,0,0,63.76Z"/><line class="cls-1" x1="7.83" y1="26.47" x2="56.51" y2="26.47"/><line class="cls-1" x1="7.88" y1="69.94" x2="56.6" y2="69.94"/><line class="cls-1" x1="18.06" y1="26.47" x2="18.06" y2="83.1"/><line class="cls-1" x1="34.7" y1="4.4" x2="34.7" y2="69.94">
+            </svg>
+        </a>
+        <button class="button" id="menu-toggle">
+            <svg id="menu-icon" data-name="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" aria-labelledby="button-label"
+            aria-describedby="button-description">
+            
+            <title id="button-label">Main Menu Button</title>
+            <desc id="button-description">A button that toggles the main menu that looks like a plus. When clicked, the image rotates and forms an X shape.</desc>
+            <defs><style>.p{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:10px;}</style></defs><line class="p" x1="48.16" y1="5.45" x2="48.16" y2="90.87"/><line class="p" x1="5.45" y1="48.16" x2="90.87" y2="48.16">
+            
+            </svg>
+        </button>
+    </header>
 
-			<div class = "flex-container project-gallery" style="flex-direction: row;">
-                <img src = "img/alessi2.jpg" alt="Alessi Sketches 1" oncontextmenu="return false;">
-				<img src = "img/alessi3.jpg" alt="Alessi Sketches 2" oncontextmenu="return false;">
-            </div>
-			<h6>Above: Early sketches and brainstorming ideas.</h6>
+    <nav class="main-menu hidden" id="menu" aria-labelledby="menu-toggle">
+        <div class="menu-item">
+            <a href="projects">Projects</a>
+        </div>
+        <div class="menu-item">
+            <a href="photography">Photo + Film</a>
+        </div>
+        <div class="menu-item">
+            <a href="about">About</a>
+        </div>
+        <div class="menu-item">
+            <a href="https://drive.google.com/file/d/1VumParS_xITvhdpTfukCfWgzK3EvJxXY/view?usp=sharing" target="_blank">Resume</a>
+        </div>
+    </nav>
 
-			<div class = "flex-container project-gallery" style="flex-direction: row;">
-                <img src = "img/alessi4.jpg" alt="Alessi Rough Poster 1" oncontextmenu="return false;">
-				<img src = "img/alessi5.jpg" alt="Alessi Rough Poster 2" oncontextmenu="return false;">
-				<img src = "img/alessi6.jpg" alt="Alessi Rough Poster 3" oncontextmenu="return false;">
-            </div>
-			<h6>Above: Further prototypes created of different layouts and ideas.</h6>
+    <section>
+        <div class="banner">
+            <img class="photo-banner" src="img/banner-alessi-600.jpg" alt="Alessi banner." width="600" height="160" srcset="img/banner-alessi-600.jpg 600w, img/banner-alessi-1000.jpg 1000w" sizes="(min-width: 75rem) 50vw">
+            <h1 class="content-container">Alessi</h1>
+        </div>
+    </section>
 
-            <div class="flex-container subfooter">
-                <div style="float: left">
-                    <a href = "hnac"><< Haney Neptunes Aquatic Club</a>
-                </div>
-                <div style="float: right">
-                    <a href = "the-usual">The Usual >></a>
-                </div>
+    <section class="grid single-project-grid content-container">
+        <div class="grid grid-description-three details">
+            <div class="details-block">
+                <p class="details-heading">Date</p>
+                <p>Fall 2018</p>
             </div>
-		</section>
-	</div>
 
-	<footer>
-		<div class="flex-container" id="footer-container">
-			<div class="footer-section" id ="footer-text">
-				<p>coded and created with tender loving care.</p>
-				<p>© 2021 taylen lee-chin.</p>
-				<p>all rights reserved.</p>
-			</div>
-			<div class="footer-section" style="padding-top: 16.5px;">
-				<a href="https://www.taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
-			</div>
-			<div class="footer-section" id="footer-links">
-				<p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
-				<p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
-				<p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
-			</div>
-		</div>
-	</footer>
+            <div class="details-block">
+                <p class="details-heading">Role</p>
+                <p>Graphic Design</p>
+                <p>Layout Design</p>
+            </div>
+
+            <div class="details-block">
+                <p class="details-heading">Tools</p>
+                <p>InDesign</p>
+                <p>Photoshop</p>
+            </div>
+        </div>
+
+        <div class="description">
+            <h2 class="project-title">Project Overview</h2>
+            <p>The creation of this Alessi poster is a student project for a graphic design class. The task for the project was to create an 11x17” public advertising poster for an upcoming local design exhibit in Vancouver. I chose the option to advertise
+                for an exhibition of Alessi products located at the Vancouver Art Gallery.</p>
+
+            <p>In researching the brand and its products, I created a cohesive design that incorporates appropriate typefaces, graphics and imagery corresponding to the company's image. The final advertisement poster incorporates an image of a lemon juicer
+                made by Alessi, one of Alessi’s most known products, and dominant monochrome colour palette of red tones to correspond with companies colours. I wanted the text and colours to create a strong contrast to draw the attention to the public,
+                while keeping a clean layout that showcases the product and informs viewers of key information about the event.</p>
+
+            <p class="italic">This project is not affiliated with Alessi or the Vancouver Art Gallery. Images and graphics used to create the following posters belong to Alessi, the Vancouver Art Gallery and their respective owners.</p>
+
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="photo-gallery column-2 row-1 margin">
+            <div class="photo-block">
+                <img src="img/alessi2.jpg" alt="Sketches and iterations of the Alessi poster, part 1.">
+            </div>
+            <div class="photo-block">
+                <img src="img/alessi3.jpg" alt="Sketches and iterations of the Alessi Poster, part 2.">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="caption">
+            <p class="italic">The initial sketches to brainstorm the design of the Alessi poster.</p>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="photo-gallery column-4 row-1 margin">
+            <div class="photo-block">
+                <img src="img/alessiF1-400.jpg" alt="The final design for the Alessi Poster." width="400" height="618" srcset="img/alessiF1-400.jpg 400w, img/alessiF1-1000.jpg 1000w, img/alessiF1-1600.jpg 1600w" sizes="(min-width: 75rem) 50vw, 100vw">
+            </div>
+            <div class="photo-block">
+                <img src="img/alessiP1-400.jpg" alt="The first mockup design for the Alessi Poster." width="400" height="618" srcset="img/alessiP1-400.jpg 400w, img/alessiP1-1000.jpg 1000w, img/alessiP1-1000.jpg 1600w" sizes="(min-width: 75rem) 50vw, 100vw">
+            </div>
+            <div class="photo-block">
+                <img src="img/alessiP2-400.jpg" alt="The second mockup design for the Alessi Poster." width="400" height="618" srcset="img/alessiP2-400.jpg 400w, img/alessiP2-1000.jpg 1000w, img/alessiP2-1600.jpg 1600w" sizes="(min-width: 75rem) 50vw, 100vw">
+            </div>
+            <div class="photo-block">
+                <img src="img/alessiP3-400.jpg" alt="The third mockup design for the Alessi Poster." width="400" height="618" srcset="img/alessiP3-400.jpg 400w, img/alessiP3-1000.jpg 1000w, img/alessiP3-1600.jpg 1600w" sizes="(min-width: 75rem) 50vw, 100vw">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="caption">
+            <p class="italic">Pictured above from top to bottom and left to right: the final poster design and the three prototype mockup designs.</p>
+        </div>
+    </section>
+
+    <a href="the-beauty-of-blackness">
+        <div class="next-project">
+            <img class="footer-banner" src="img/blackness-400.jpg" alt="The Beauty of Blackness Banner.">
+            <p class="content-container" id="long-name">Next Project: The Beauty of Blackness</p>
+        </div>
+    </a>
+
+    <footer class="content-container">
+        <div>
+            <p>Coded & created with tender loving care.</p>
+            <p>© 2022 Taylen Lee-Chin.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>

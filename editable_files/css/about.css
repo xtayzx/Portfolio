@@ -1,0 +1,116 @@
+:root {
+    --background: #fdfdfd;
+    --lightPurple: #9e8eb3;
+    /* --darkPurple: #6a5a7e; */
+    --darkPurple: #554864;
+    --faintPurple: #dcdcee;
+    --black: #000000;
+    --offBlack: #1a1a1a;
+    --offWhite: #e0e0e0;
+    --link: #9a84b8;
+}
+
+#about-banner {
+    background-color: var(--offBlack);
+}
+
+#about-title {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-variant-caps: all-small-caps;
+    line-height: 2;
+    margin: 0.67em 0;
+}
+
+.name {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-variant: normal;
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-photo,
+.about-description {
+    margin: 3.5rem 0;
+}
+
+.about-photo {
+    margin-bottom: 0;
+}
+
+.links {
+    margin-top: 3rem;
+}
+
+.about-description p {
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.links p {
+    margin-bottom: 0;
+}
+
+.about-icons {
+    padding: 3rem 0rem;
+    justify-items: center;
+    text-align: center;
+    border-top: 3.5px solid #000000;
+}
+
+.about-icons a {
+    margin: 0 1rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.about-icons a:hover,
+.about-icons a:focus {
+    filter: invert(38%) sepia(34%) saturate(427%) hue-rotate(224deg) brightness(87%) contrast(84%);
+    transition: all 0.6s ease-in-out;
+}
+
+.size {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media only screen and (min-width: 38rem) {
+    .about-icons a {
+        margin: 0 4rem;
+        transition: all 0.6s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .name {
+        font-size: 2rem;
+    }
+    #about-title {
+        font-size: 3rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .about-grid {
+        flex-direction: row;
+        width: 100vw;
+    }
+    .about-photo {
+        margin-right: 4rem;
+        margin-bottom: 3.5rem;
+    }
+    .about-description {
+        width: 100vw;
+    }
+    .about-icons a {
+        margin: 0 6rem;
+        transition: all 0.6s ease-in-out;
+    }
+}

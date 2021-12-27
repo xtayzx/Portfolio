@@ -1,0 +1,279 @@
+:root {
+    --background: #fdfdfd;
+    --lightPurple: #9e8eb3;
+    /* --darkPurple: #6a5a7e; */
+    --darkPurple: #554864;
+    --faintPurple: #dcdcee;
+    --black: #000000;
+    --offBlack: #1a1a1a;
+    --offWhite: #e0e0e0;
+    --link: #9a84b8;
+}
+
+.home-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 40vh 40vh 40vh 40vh 20vh 40vh;
+    width: 100vw;
+    height: fit-content;
+}
+
+.grid-block {
+    border: 0.5px solid #000000;
+    vertical-align: center;
+    background-position: center;
+    display: flex;
+    position: relative;
+}
+
+.grid-block img {
+    width: 100%;
+    object-fit: cover;
+    /* object-position: left center; */
+}
+
+.description {
+    opacity: 0%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover .description,
+a:focus .description,
+a:active .description {
+    opacity: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover #hover-purple,
+a:focus #hover-purple,
+a:active #hover-purple {
+    opacity: 100%;
+    background-color: rgba(133, 190, 228, 0.6);
+    transition: all 0.4s ease-in-out;
+}
+
+.title {
+    position: inherit;
+    color: white;
+    bottom: 0;
+    right: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 500;
+    font-variant: all-small-caps;
+    padding: 0 1rem 1rem 0;
+    letter-spacing: 1px;
+}
+
+.grid-main-project-photo {
+    grid-row: 1;
+}
+
+.grid-main-project-des {
+    background-color: var(--background);
+    padding: 12vh 2.5rem;
+    grid-row: 2;
+    display: block;
+}
+
+.grid-project-one {
+    grid-row: 3;
+}
+
+.grid-project-two {
+    grid-row: 4;
+}
+
+.grid-photo {
+    background-color: var(--offBlack);
+    grid-row: 5;
+}
+
+.grid-photo p {
+    color: white;
+}
+
+.grid-socials {
+    background-color: var(--background);
+    grid-row: 6;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-about-me {
+    grid-row: 7;
+    align-content: center;
+}
+
+.grid-socials a {
+    margin: 0 1.2rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.grid-socials a:hover,
+.grid-socials a:focus {
+    filter: invert(38%) sepia(34%) saturate(427%) hue-rotate(224deg) brightness(87%) contrast(84%);
+    transition: all 0.6s ease-in-out;
+}
+
+.size {
+    width: 4rem;
+    height: 4rem;
+}
+
+.more-projects {
+    opacity: 100%;
+}
+
+.hover,
+.hover:hover {
+    color: black;
+    cursor: crosshair;
+    text-decoration: none;
+}
+
+#welcome-banner {
+    background-color: var(--darkPurple);
+    display: block;
+    background-image: url(../img/taylen1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+#welcome-banner img {
+    object-fit: cover;
+    object-position: left center;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#recent-works {
+    background-color: var(--offBlack);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* .add-white {
+    background-color: white;
+} */
+
+.padding-bottom {
+    padding-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 34.5rem) and (max-width: 68rem) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40vh 60vh 60vh 60vh 30vh;
+    }
+    .grid-main-project-photo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .grid-main-project-des {
+        grid-column: 2/4;
+        grid-row: 1;
+        padding: 14vh 2.5rem;
+    }
+    .grid-project-one {
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+    .grid-project-two {
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+    .grid-photo {
+        grid-row: 4;
+        grid-column: 1/4;
+    }
+    .grid-socials {
+        grid-row: 5;
+        grid-column: 1/3;
+    }
+    .grid-about-me {
+        grid-row: 5;
+        grid-column: 3;
+    }
+    .grid-socials a {
+        margin: 0 3rem;
+        transition: all 0.6s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 68rem) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40vh 40vh 40vh;
+    }
+    .grid-main-project-photo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .grid-main-project-des {
+        grid-column: 2/4;
+        grid-row: 1;
+        padding: 16vh 2.5rem;
+    }
+    .grid-project-one {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .grid-project-two {
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .grid-photo {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .grid-socials {
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+    .grid-about-me {
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .grid-socials a {
+        margin: 0 6rem;
+        transition: all 0.6s ease-in-out;
+    }
+}
+
+.icons8-instagram {
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNIDE2IDMgQyA4Ljg1NDU0NTUgMyAzIDguODU0NTQ1NSAzIDE2IEwgMyAzNCBDIDMgNDEuMTQ1NDU1IDguODU0NTQ1NSA0NyAxNiA0NyBMIDM0IDQ3IEMgNDEuMTQ1NDU1IDQ3IDQ3IDQxLjE0NTQ1NSA0NyAzNCBMIDQ3IDE2IEMgNDcgOC44NTQ1NDU1IDQxLjE0NTQ1NSAzIDM0IDMgTCAxNiAzIHogTSAxNiA1IEwgMzQgNSBDIDQwLjA1NDU0NSA1IDQ1IDkuOTQ1NDU0NSA0NSAxNiBMIDQ1IDM0IEMgNDUgNDAuMDU0NTQ1IDQwLjA1NDU0NSA0NSAzNCA0NSBMIDE2IDQ1IEMgOS45NDU0NTQ1IDQ1IDUgNDAuMDU0NTQ1IDUgMzQgTCA1IDE2IEMgNSA5Ljk0NTQ1NDUgOS45NDU0NTQ1IDUgMTYgNSB6IE0gMzcgMTEgQyAzNS45IDExIDM1IDExLjkgMzUgMTMgQyAzNSAxNC4xIDM1LjkgMTUgMzcgMTUgQyAzOC4xIDE1IDM5IDE0LjEgMzkgMTMgQyAzOSAxMS45IDM4LjEgMTEgMzcgMTEgeiBNIDI1IDE0IEMgMTguOTU0NTQ1IDE0IDE0IDE4Ljk1NDU0NSAxNCAyNSBDIDE0IDMxLjA0NTQ1NSAxOC45NTQ1NDUgMzYgMjUgMzYgQyAzMS4wNDU0NTUgMzYgMzYgMzEuMDQ1NDU1IDM2IDI1IEMgMzYgMTguOTU0NTQ1IDMxLjA0NTQ1NSAxNCAyNSAxNCB6IE0gMjUgMTYgQyAyOS45NTQ1NDUgMTYgMzQgMjAuMDQ1NDU1IDM0IDI1IEMgMzQgMjkuOTU0NTQ1IDI5Ljk1NDU0NSAzNCAyNSAzNCBDIDIwLjA0NTQ1NSAzNCAxNiAyOS45NTQ1NDUgMTYgMjUgQyAxNiAyMC4wNDU0NTUgMjAuMDQ1NDU1IDE2IDI1IDE2IHoiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+
+/* @media only screen and (min-width: 30rem) {
+    #welcome-banner {
+        background-image: url(../img/banner-770.jpg);
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #welcome-banner {
+        background-image: url(../img/banner-1000.jpg);
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #welcome-banner {
+        background-image: url(../img/banner-1296.jpg);
+    }
+} */

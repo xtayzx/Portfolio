@@ -1,30 +1,15 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-    <!-- HELLO and welcome to the code of my site!
-	i spent a very long time working on this, which includes many hours of watching various tutorials, reading
-	about how to fix the issues i had, designing the entire site for various screen sizes and most importantly, DEBUGGING. 
-	please consider these factors and i ask that you please do not copy my files without contacting me first.
-	i'd be more than happy to talk about my process with you, help you with your project and to share my notes :) thanks so much!!
-	- taylen
-	-->
-
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylen Lee-Chin</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- MEDIA QUERIES -->
-    <link rel="stylesheet" href="css/lgDevices.css">
-    <link rel="stylesheet" href="css/mdDevices.css">
-    <link rel="stylesheet" href="css/smDevices.css">
-    <link rel="stylesheet" href="css/xsmDevices.css">
+    <meta name="description" content="Taylen Lee-Chin is a Visual Designer from Vancouver, Canada. This is her portfolio. Graphic designer, Photographer, Visual Artist and Art Director." />
 
-    <!-- MENU FOR SMALL SCREENS -->
-    <script src="js/menuButton.js"></script>
-    <script src="js/imageChange.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -34,72 +19,149 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Syncopate&display=swap"
         rel="stylesheet">
 
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://use.typekit.net/jyu7rqj.css">
 
-    <meta name="description" content="Taylen Lee-Chin is a multidisciplinary visual designer from Vancouver, Canada. This is her portfolio. Graphic designer, Photographer, Visual Artist, Front-End Developer, Art Director." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Lexend+Deca:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVFM6649MR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DVFM6649MR');
+    </script>
 </head>
 
 <body>
-    <div class="page-container">
-        <header class="flex-container">
-            <div id="header-space">
-                <h1 id="logo">
-                    <a href="https://www.taylen.ca" id="logo-link">TLC</a>
-                </h1>
-                <button id="button-container" onclick="openMenu()">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</button>
-            </div>
-            <na id="menu">
-                <ul>
-                    <li class="menu-item" id="projects"><a href="projects">Projects</a></li>
-                    <li class="menu-item" id="photography"><a href="photography">Photo + Film</a></li>
-                    <li class="menu-item" id="about"><a href="about">About</a></li>
-                </ul>
-            </na>
-        </header>
+    <script src="js/loadCSS.js" id="home"></script>
+    <header class="content-container-header">
+        <a href="https://taylen.ca" class="tlc-logo">
+            <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" aria-labelledby="logo-label" aria-describedby="logo-description">
+                <title id="logo-label">Taylen Lee-Chin's Logo</title>
+                <desc id="logo-description">A moon shaped icon with the initals TLC incorportated with the design.</desc>
+                
+                <defs><style>.cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:4.5px;}</style></defs><path class="cls-1" d="M79.89,80.05a31.89,31.89,0,0,1,0-63.78h.78a45.65,45.65,0,1,0,0,63.76Z"/><line class="cls-1" x1="7.83" y1="26.47" x2="56.51" y2="26.47"/><line class="cls-1" x1="7.88" y1="69.94" x2="56.6" y2="69.94"/><line class="cls-1" x1="18.06" y1="26.47" x2="18.06" y2="83.1"/><line class="cls-1" x1="34.7" y1="4.4" x2="34.7" y2="69.94">
+            </svg>
+        </a>
+        <button class="button" id="menu-toggle">
+            <svg id="menu-icon" data-name="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" aria-labelledby="button-label"
+            aria-describedby="button-description">
+            
+            <title id="button-label">Main Menu Button</title>
+            <desc id="button-description">A button that toggles the main menu that looks like a plus. When clicked, the image rotates and forms an X shape.</desc>
+            <defs><style>.p{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:10px;}</style></defs><line class="p" x1="48.16" y1="5.45" x2="48.16" y2="90.87"/><line class="p" x1="5.45" y1="48.16" x2="90.87" y2="48.16">
+            
+            </svg>
+        </button>
+    </header>
 
-        <section id="welcome" class="main">
-            <div id="index-text">
+    <nav class="main-menu hidden" id="menu" aria-labelledby="menu-toggle">
+        <div class="menu-item">
+            <a href="projects">Projects</a>
+        </div>
+        <div class="menu-item">
+            <a href="photography">Photo + Film</a>
+        </div>
+        <div class="menu-item">
+            <a href="about">About</a>
+        </div>
+        <div class="menu-item">
+            <a href="https://drive.google.com/file/d/1VumParS_xITvhdpTfukCfWgzK3EvJxXY/view?usp=sharing" target="_blank">Resume</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="content-container main-banner" id="welcome-banner">
+            <div class="main-banner-content">
                 <h1>Taylen Lee-Chin</h1>
-                <p><i class="text-link" onmouseover="imageOn1()" onmouseout="imageOff()">Multidisciplinary visual designer</i> and creator.</p>
-                <p>Based out of the west coast in <a href="https://www.google.com/maps/place/Metro+Vancouver,+BC/@49.2884146,-123.2955314,10z/data=!3m1!4b1!4m5!3m4!1s0x5462ce9005f9dfa5:0xce9c6c979ef4fca6!8m2!3d49.2501243!4d-123.0824217" target="_blank" class="text-link"
-                        onmouseover="imageOn2()" onmouseout="imageOff()">Vancouver, Canada</a>.</p>
-                <p>Currently studying design and interactive systems <a href="https://www.sfu.ca" target="_blank" class="text-link" onmouseover="imageOn3()" onmouseout="imageOff()">@SFU</a>.</p>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <div class="flex-container" id="footer-container">
-            <div class="footer-section" id="footer-text">
-                <p>coded and created with tender loving care.</p>
-                <p>© 2021 taylen lee-chin.</p>
-                <p>all rights reserved.</p>
-            </div>
-            <div class="footer-section">
-                <a href="https://www.taylen.ca" target="_self"><img src=img/tlc.png id="footer-logo"></a>
-            </div>
-            <div class="footer-section" id="footer-links">
-                <p><a href="resume" target="_self">resume</a> // <a href="mailto:taylenlc@outlook.com">email</a></p>
-                <p><a href="https://www.instagram.com/tayz.lc" target="_blank">instagram</a></p>
-                <p><a href="https://www.linkedin.com/in/tayzlc/" target="_blank">linkedin</a></p>
+                <p><a class="hover" onmouseover="imageOn1()" onmouseout="imageOff()">Graphic Designer</a> and Photographer</p>
+                <p>Based out of the west coast in
+                    <a href="https://www.google.com/maps/place/Metro+Vancouver,+BC/@49.2884146,-123.2955314,10z/data=!3m1!4b1!4m5!3m4!1s0x5462ce9005f9dfa5:0xce9c6c979ef4fca6!8m2!3d49.2501243!4d-123.0824217" target="_blank" class="text-link" onmouseover="imageOn2()" onmouseout="imageOff()">Vancouver, Canada</a></p>
+                <p class="padding-bottom">Currently studying at <a href="https://www.sfu.ca" target="_blank" class="text-link" onmouseover="imageOn3()" onmouseout="imageOff()">@SFU</a></p>
             </div>
         </div>
+    </section>
+
+    <section class="content-container" id="recent-works">
+        <h2>Recent Works</h2>
+    </section>
+
+    <section class="grid home-grid">
+        <a href="cloud-gazer.html" class="grid-block grid-main-project-photo">
+            <img src="img/cloudGazer1-1000.jpg" alt="A thumbnail of the cover image for Cloud Gazer.">
+            <div class=description>
+                <p class="title">Cloud Gazer</p>
+            </div>
+        </a>
+        <div class="grid-block grid-main-project-des">
+            <h3>Cloud Gazer</h3>
+            <p>A mobile application created to help users reflect on their day-to-day mental health and well-being.</p>
+        </div>
+        <a href="the-beauty-of-blackness.html" class="grid-block grid-project-one">
+            <img src="img/blackness-1000.jpg" alt="A thumbnail of the cover image for The Beauty of Blackness.">
+            <div class=description>
+                <p class="title">The Beauty of Blackness</p>
+            </div>
+        </a>
+        <a href="photography.html" class="grid-block grid-photo">
+            <img src="img/thumbs/img1.jpg" alt="A picture of a pink sunset taken by Taylen Lee-Chin.">
+            <div class=description>
+                <p class="title">Photo + Film</p>
+            </div>
+        </a>
+        <a href="the-little-prince.html" class="grid-block grid-project-two">
+            <img src="img/TLP1-400.jpg" alt="A picture of the book cover redesign project for The Little Prince." width="400" height="571" srcset="img/TLP1-400.jpg 400w, img/TLP1-1000.jpg 1000w, img/TLP1-1600.jpg 1600w" sizes="(min-width: 75rem) 50vw, 100vw">
+            <div class=description>
+                <p class="title">The Little Prince</p>
+            </div>
+        </a>
+        <div class="grid-block grid-socials">
+            <a href="mailto:taylenlc@outlook.com">
+                <svg id="email" data-name="email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.32 96.32" width="100px" height="100px" class="size" aria-labelledby="email-label" aria-describedby="email-description">
+                    <title id="email-label">Email Icon</title>
+                    <desc id="email-description">A icon that resembles a envelope.</desc>
+                    <defs><style>.email{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;}</style></defs><rect class="email" x="3.47" y="15.93" width="89.37" height="60.88"/><polyline class="email" points="3.48 15.93 48.16 53.16 92.85 15.93"/></svg>
+            </a>
+            <a href="https://www.instagram.com/tayz.lc" target="_blank">
+                <svg id="instagram" data-name="instagram" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px" class="size" aria-labelledby="instagram-label" aria-describedby="instagram-description">
+                    <title id="instagram-label">Instagram Logo</title>
+                    <desc id="instagram-description">A Instagram logo icon.</desc>
+                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <svg id="linkedin" data-name="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100px" height="100px" class="size" aria-labelledby="linkedin-label" aria-describedby="linkedin-description">
+                    <title id="linkedin-label">LinkedIn Logo</title>
+                    <desc id="linkedin-description">A LinkedIn logo icon.</desc>
+                    <g id="surface11933829">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 76 12 L 20 12 C 15.578125 12 12 15.578125 12 20 L 12 76 C 12 80.421875 15.578125 84 20 84 L 76 84 C 80.421875 84 84 80.421875 84 76 L 84 20 C 84 15.578125 80.421875 12 76 12 Z M 36 68 L 25.90625 68 L 25.90625 40 L 36 40 Z M 30.777344 34.867188 C 27.691406 34.867188 25.632812 32.8125 25.632812 30.066406 C 25.632812 27.324219 27.6875 25.269531 31.117188 25.269531 C 34.199219 25.269531 36.261719 27.324219 36.261719 30.066406 C 36.261719 32.8125 34.203125 34.867188 30.777344 34.867188 Z M 72 68 L 62.230469 68 L 62.230469 52.695312 C 62.230469 48.464844 59.628906 47.488281 58.652344 47.488281 C 57.675781 47.488281 54.421875 48.140625 54.421875 52.695312 C 54.421875 53.347656 54.421875 68 54.421875 68 L 44.328125 68 L 44.328125 40 L 54.421875 40 L 54.421875 43.90625 C 55.71875 41.628906 58.324219 40 63.207031 40 C 68.09375 40 72 43.90625 72 52.695312 Z M 72 68 "/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <a href="about" class="grid-block grid-about-me">
+            <img src="img/taylen-400.jpg" alt="A portrait of Taylen Lee-Chin." width="400" height="267" srcset="img/taylen-400.jpg 400w, img/taylen-1000.jpg 1000w, img/taylen-1600.jpg 1600w" sizes="(min-width: 75rem) 50vw, 100vw">
+            <div class=description>
+                <p class="title">Hello, I'm Taylen</p>
+            </div>
+        </a>
+
+    </section>
+
+    <footer class="content-container">
+        <div>
+            <p>Coded & created with tender loving care.</p>
+            <p>© 2022 Taylen Lee-Chin.</p>
+            <p>All rights reserved.</p>
+        </div>
     </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/imageChange.js"></script>
 </body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KWXGJT237D"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-KWXGJT237D');
-</script>
 
 </html>
