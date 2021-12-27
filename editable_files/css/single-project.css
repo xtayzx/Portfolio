@@ -192,6 +192,7 @@ a:active .next-project p {
 
 #long-title {
     padding-top: 0;
+    line-height: 1.5rem;
 }
 
 .margin {
@@ -226,7 +227,7 @@ a:active .next-project p {
     }
     #long-title {
         padding-top: 1.8rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -250,6 +251,7 @@ a:active .next-project p {
     }
     #long-title {
         padding-top: 0;
+        line-height: 2rem;
     }
 }
 
