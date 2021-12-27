@@ -216,7 +216,7 @@ a:active .next-project p {
     height: 100%;
 }
 
-@media only screen and (min-width: 23.5rem) {
+@media only screen and (min-width: 24.5rem) {
     .next-project p {
         padding-top: 6rem;
         padding-bottom: 6rem;
