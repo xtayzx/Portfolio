@@ -28,7 +28,7 @@
 .grid-block img {
     width: 100%;
     object-fit: cover;
-    /* object-position: left center; */
+    object-position: left center;
 }
 
 .description {
