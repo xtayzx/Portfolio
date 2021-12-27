@@ -90,8 +90,8 @@ a:active #hover-purple {
 }
 
 .grid-photo {
-    background-color: var(--offBlack);
     grid-row: 4;
+    background-color: var(--offBlack);
 }
 
 .grid-photo p {
