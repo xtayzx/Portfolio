@@ -2,12 +2,17 @@
     --background: #fdfdfd;
     --lightPurple: #9e8eb3;
     /* --darkPurple: #6a5a7e; */
-    --darkPurple: #554864;
+    /* --darkPurple: #554864; */
+    --darkPurple: #342c3fd0;
     --faintPurple: #dcdcee;
     --black: #000000;
     --offBlack: #1a1a1a;
     --offWhite: #e0e0e0;
-    --link: #9a84b8;
+    /* --link: #9a84b8; */
+    --link: #95b5fa;
+    --lightBlue: #95b5fa;
+    /* --darkBlue: #354057c5; */
+    --darkBlue: #354057c5;
 }
 
 .home-grid {
@@ -28,7 +33,7 @@
 .grid-block img {
     width: 100%;
     object-fit: cover;
-    object-position: left center;
+    /* object-position: left center; */
 }
 
 .description {
@@ -118,7 +123,8 @@ a:active #hover-purple {
 
 .grid-socials a:hover,
 .grid-socials a:focus {
-    filter: invert(38%) sepia(34%) saturate(427%) hue-rotate(224deg) brightness(87%) contrast(84%);
+    /* filter: invert(38%) sepia(34%) saturate(427%) hue-rotate(224deg) brightness(87%) contrast(84%); */
+    filter: invert(74%) sepia(81%) saturate(1200%) hue-rotate(180deg) brightness(90%) contrast(90%);
     transition: all 0.6s ease-in-out;
 }
 
@@ -133,34 +139,50 @@ a:active #hover-purple {
 
 .hover,
 .hover:hover {
-    color: black;
+    color: var(--link);
     cursor: crosshair;
     text-decoration: none;
 }
 
-#welcome-banner {
-    background-color: var(--darkPurple);
-    display: block;
-    background-image: url(../img/taylen1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.3s ease-in-out;
+#main-header {
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    top:auto;
 }
 
-#welcome-banner img {
+#index-banner {
+    width: 100vw;
+    height: 80vh;
+}
+
+/* #welcome-banner img {
     object-fit: cover;
     object-position: left center;
     width: 100%;
     position: relative;
     display: flex;
-}
+} */
 
 #recent-works {
+    background-image: url(../img/blue-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: var(--offBlack);
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+#new-banner {
+    position: absolute;
+    top: 40vh;
+}
+
+#new-banner h1, #new-banner p{
+    color: white;
+    margin: 0;
+}
+
 
 
 /* .add-white {
@@ -183,7 +205,7 @@ a:active #hover-purple {
     .grid-main-project-des {
         grid-column: 2/4;
         grid-row: 1;
-        padding: 14vh 2.5rem;
+        padding: 12vh 2.5rem;
     }
     .grid-project-one {
         grid-row: 2;
@@ -223,7 +245,7 @@ a:active #hover-purple {
     .grid-main-project-des {
         grid-column: 2/4;
         grid-row: 1;
-        padding: 16vh 2.5rem;
+        padding: 14vh 2.5rem;
     }
     .grid-project-one {
         grid-row: 2;

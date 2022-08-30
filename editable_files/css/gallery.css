@@ -6,6 +6,20 @@
 
 /* font-family: 'Syncopate', sans-serif; */
 
+
+.tlc-logo:hover,
+.tlc-logo:focus,
+button:focus,
+button:hover {
+    /* filter: invert(37%) sepia(10%) saturate(1240%) hue-rotate(224deg) brightness(97%) contrast(91%); */
+    filter: invert(74%) sepia(65%) saturate(1000%) hue-rotate(185deg) brightness(110%) contrast(40%);
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background-color: var(--background);
+}
+
 #index-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

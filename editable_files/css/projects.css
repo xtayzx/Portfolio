@@ -10,6 +10,13 @@
     --link: #9a84b8;
 }
 
+#projects-banner {
+    background-image: url(../img/blue-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .project-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh;

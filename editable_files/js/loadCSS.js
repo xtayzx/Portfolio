@@ -45,31 +45,3 @@ if (document.getElementById('home')) {
     link.media = 'all';
     head.appendChild(link);
 }
-
-// var head2 = document.getElementsByTagName('head')[0];
-// var link2 = document.createElement('link');
-// link2.id = cssId;
-// link2.rel = 'stylesheet';
-// link2.type = 'text/css';
-// link2.href = 'css/about.css';
-// link2.media = 'all';
-// head2.appendChild(link2);
-
-// var head3 = document.getElementsByTagName('head')[0];
-// var link3 = document.createElement('link');
-// link3.id = cssId;
-// link3.rel = 'stylesheet';
-// link3.type = 'text/css';
-// link3.href = 'css/projects.css';
-// link3.media = 'all';
-// head3.appendChild(link3);
-
-// var head4 = document.getElementsByTagName('head')[0];
-// var link4 = document.createElement('link');
-// link4.id = cssId;
-// link4.rel = 'stylesheet';
-// link4.type = 'text/css';
-// link4.href = 'css/single-project.css';
-// link4.media = 'all';
-// head4.appendChild(link4);
-// }

@@ -7,7 +7,21 @@
     --black: #000000;
     --offBlack: #1a1a1a;
     --offWhite: #e0e0e0;
-    --link: #9a84b8;
+    /* --link: #9a84b8; */
+        /* yes this colour is different than the rest of the site */
+        --link: #0143d1;
+}
+
+#design-focus {
+    background-color: var(--offBlack);
+    background-image: url(../img/blue-banner.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.3rem;
+}
+
+#design-focus h2, #design-focus p {
+    color: white;
 }
 
 .banner {
@@ -151,7 +165,7 @@ p.details-heading {
 }
 
 .photo-block,
-.tlp-block {
+.uneven-block {
     vertical-align: center;
     background-position: center;
     display: flex;
@@ -192,7 +206,6 @@ a:active .next-project p {
 
 #long-title {
     padding-top: 0;
-    line-height: 1.5rem;
 }
 
 .margin {
@@ -217,7 +230,11 @@ a:active .next-project p {
     height: 100%;
 }
 
-@media only screen and (min-width: 26rem) {
+.space-right {
+    padding-bottom: 1.2rem;
+}
+
+@media only screen and (min-width: 23.5rem) {
     .next-project p {
         padding-top: 6rem;
         padding-bottom: 6rem;
@@ -227,7 +244,6 @@ a:active .next-project p {
     }
     #long-title {
         padding-top: 1.8rem;
-        line-height: 2rem;
     }
 }
 
@@ -239,9 +255,9 @@ a:active .next-project p {
     .column-3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .column-2 {
+    /* .column-2 {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
     .column-4 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -251,7 +267,10 @@ a:active .next-project p {
     }
     #long-title {
         padding-top: 0;
-        line-height: 2rem;
+    }
+    .space-right {
+        padding-right: 1.5rem;
+        padding-bottom: 0;
     }
 }
 
@@ -294,7 +313,7 @@ a:active .next-project p {
     .tlp-padding {
         padding-left: 1rem;
     }
-    .tlp-block {
+    .uneven-block {
         display: block;
     }
     .tlp-gap {
@@ -324,6 +343,9 @@ a:active .next-project p {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .description {
-        margin: 0.8rem 0 0 1rem;
+        margin: 0.8rem 0 0 0rem;
+    }
+    .column-2 {
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -1,2 +1,2 @@
 # tlc2022
-nov 2021 portfolio - graphic design based
+september 2022 portfolio

@@ -1,0 +1,1 @@
+"use strict";console.log("message js working");var message=document.querySelector("#message");function disappear(e){message.classList.add("opacity-zero")}document.addEventListener("mousedown",disappear),document.addEventListener("touchstart",disappear);

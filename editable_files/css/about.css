@@ -2,16 +2,24 @@
     --background: #fdfdfd;
     --lightPurple: #9e8eb3;
     /* --darkPurple: #6a5a7e; */
+    --darkPurple: #342c3fd0;
     --darkPurple: #554864;
     --faintPurple: #dcdcee;
     --black: #000000;
     --offBlack: #1a1a1a;
     --offWhite: #e0e0e0;
-    --link: #9a84b8;
+    /* --link: #9a84b8; */
+    /* yes this colour is different than the rest of the site */
+    --link: #0143d1;
+    --lightBlue: #95b5fa;
+    --darkBlue: #354057c5;
 }
 
 #about-banner {
     background-color: var(--offBlack);
+    background-image: url(../img/blue-banner.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #about-title {
@@ -53,6 +61,10 @@
 .about-description p {
     line-height: 1.8rem;
     margin-bottom: 1.2rem;
+}
+
+.about-description p.click{
+    margin-bottom: 0rem;
 }
 
 .links p {

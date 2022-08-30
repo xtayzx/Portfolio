@@ -10,12 +10,17 @@
     --background: #fdfdfd;
     --lightPurple: #9e8eb3;
     /* --darkPurple: #6a5a7e; */
-    --darkPurple: #554864;
+    /* --darkPurple: #554864; */
+    --darkPurple: #342c3fd0;
     --faintPurple: #dcdcee;
     --black: #000000;
     --offBlack: #1a1a1a;
+    --offBlackLower: #111111;
     --offWhite: #e0e0e0;
-    --link: #9a84b8;
+    /* --link: #9a84b8; */
+    --link: #95b5fa;
+    --lightBlue: #95b5fa;
+    --darkBlue: #354057c5;
 }
 
 .grid {
@@ -39,10 +44,13 @@ header {
     position: sticky;
     top: 0;
     padding: 2.5rem 2rem;
-    background-color: var(--background);
+    background-color: var(--offBlack);
+    /* background-image: url(../img/blue-banner.jpg);
+    background-size: cover;
+    background-position: center; */
     align-items: center;
     width: 100vw;
-    z-index: 2;
+    z-index: 1;
 }
 
 .content-container,
@@ -56,6 +64,10 @@ header {
     animation: transitionIn 1s;
 }
 
+#new-banner {
+    animation: transitionIn 1.5s;
+}
+
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -64,6 +76,22 @@ header {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.opacity-zero {
+    animation: transitionOut 1s;
+    opacity: 0;
+}
+
+@keyframes transitionOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(+10px);
     }
 }
 
@@ -84,7 +112,8 @@ button {
 .tlc-logo:focus,
 button:focus,
 button:hover {
-    filter: invert(37%) sepia(10%) saturate(1240%) hue-rotate(224deg) brightness(97%) contrast(91%);
+    /* filter: invert(37%) sepia(10%) saturate(1240%) hue-rotate(224deg) brightness(97%) contrast(91%); */
+    filter: invert(74%) sepia(81%) saturate(900%) hue-rotate(200deg) brightness(160%) contrast(70%);
     transition: all 0.3s ease-in-out;
 }
 
@@ -125,7 +154,7 @@ button:target {
     width: 8.5rem;
     min-height: 90vh;
     max-height: 100vh;
-    background-color: var(--darkPurple);
+    background-color: var(--darkBlue);
     transition: all 0.6s ease-in-out;
     z-index: 2;
 }
@@ -197,35 +226,31 @@ footer p {
 .main-banner {
     height: 80vh;
     width: 100vw;
-    padding: 25vh 2rem;
+    padding: 25vh 0rem;
     text-align: center;
+    background-color: none;
+    display: block;
+    position: relative;
 }
 
 .main-banner-content {
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
     padding-top: 0.5rem;
 }
 
-@media only screen and (min-width: 38.5rem) and (max-width: 70rem) {
+@media only screen and (min-width: 38.5rem) {
     .main-banner-content {
         text-align: left;
-        padding-left: 2rem;
-        padding-right: 1rem;
-        margin-right: 20vw;
-    }
-}
-
-@media only screen and (min-width: 70rem) {
-    .main-banner-content {
-        text-align: left;
-        padding-left: 2rem;
-        padding-right: 1rem;
-        margin-right: 40vw;
     }
 }
 
 .main-banner h1 {
     margin: 0;
+    color: white;
+}
+
+.main-banner p {
+    color: white;
 }
 
 .banner {
@@ -309,6 +334,18 @@ img {
     width: 100%;
 }
 
+canvas {
+    overflow: hidden;
+    background-color: var(--offBlackLower);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
 
 /* SMALL DEVICES STYLESHEET (portrait tablets and large phones, 600px and up) */
 
@@ -321,6 +358,10 @@ img {
     .main-menu {
         width: 8.25rem;
     }
+
+    #new-banner {
+        margin-left: 2.5rem;
+    }
 }
 
 @media only screen and (min-width: 48rem) {
@@ -329,6 +370,11 @@ img {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
+    #new-banner {
+        margin-left: 4rem;
+    }
+
     .main-menu {
         width: 10.5rem;
     }
