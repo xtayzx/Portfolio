@@ -155,6 +155,11 @@ a:active #hover-purple {
     height: 80vh;
 }
 
+.scroll-room {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
 /* #welcome-banner img {
     object-fit: cover;
     object-position: left center;
@@ -171,6 +176,7 @@ a:active #hover-purple {
     background-color: var(--offBlack);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    /* z-index: 2; */
 }
 
 #new-banner {
