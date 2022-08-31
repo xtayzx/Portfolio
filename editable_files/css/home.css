@@ -182,7 +182,7 @@ a:active #hover-purple {
 #new-banner {
     position: absolute;
     top: 40vh;
-    padding-right: auto;
+    margin-right: auto;
 }
 
 #new-banner h1, #new-banner p{
