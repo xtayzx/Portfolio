@@ -35,6 +35,7 @@
     font-size: 2.5rem;
     padding-top: 1rem;
     position: absolute;
+    line-height: 1.5;
 }
 
 .photo-banner {
@@ -205,7 +206,7 @@ a:active .next-project p {
 }
 
 #long-title {
-    padding-top: 0;
+    padding-top: 0rem;
 }
 
 .margin {
@@ -243,7 +244,13 @@ a:active .next-project p {
         padding-top: 6rem;
     }
     #long-title {
-        padding-top: 1.8rem;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 32.5rem) {
+    #long-title {
+        padding-top: 1.4rem;
     }
 }
 
@@ -264,6 +271,7 @@ a:active .next-project p {
     .banner h1 {
         padding-top: 0;
         font-size: 3rem;
+        line-height: 2;
     }
     #long-title {
         padding-top: 0;
