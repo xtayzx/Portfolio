@@ -160,6 +160,12 @@ a:active #hover-purple {
     margin-right: 3rem;
 }
 
+#message {
+    display: block;
+    padding-top: 1.5rem;
+}
+
+
 /* #welcome-banner img {
     object-fit: cover;
     object-position: left center;
@@ -183,6 +189,8 @@ a:active #hover-purple {
     position: absolute;
     top: 40vh;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #new-banner h1, #new-banner p{
@@ -190,6 +198,15 @@ a:active #hover-purple {
     margin: 0;
 }
 
+.read-more {
+    width: 12rem;
+    height: 2.5rem;
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid white;
+    float: left;
+    margin-left: 0;
+    transition: height 0.3s ease-in-out;
+}
 
 
 /* .add-white {
