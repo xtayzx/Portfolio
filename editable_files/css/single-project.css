@@ -207,6 +207,7 @@ a:active .next-project p {
 
 #long-title {
     padding-top: 0rem;
+    line-height: 1.4;
 }
 
 .margin {
@@ -244,7 +245,7 @@ a:active .next-project p {
         padding-top: 6rem;
     }
     #long-title {
-        padding-top: 0;
+        padding-top: 1.8rem;
     }
 }
 
@@ -275,6 +276,7 @@ a:active .next-project p {
     }
     #long-title {
         padding-top: 0;
+        line-height: 2;
     }
     .space-right {
         padding-right: 1.5rem;
