@@ -138,8 +138,8 @@ a:hover .grid-text {
     .project-grid {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: 50vh 50vh 50vh;
-        grid-template-rows: 50vh 50vh 50vh;
+        -ms-grid-rows: 50vh 50vh 50vh 50vh;
+        grid-template-rows: 50vh 50vh 50vh 50vh;
         width: 100%;
         height: -webkit-fit-content;
         height: -moz-fit-content;
